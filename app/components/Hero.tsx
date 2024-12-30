@@ -15,7 +15,7 @@ const content = {
     error: "An error occurred. Please try again."
   },
   de: {
-    title: "Revolutionierung der Intralogistik",
+    title: "Revolution der Intralogistik",
     description: "Optimieren Sie Ihr Umschlaglager mit smart gesteuerten Gabelstaplern",
     cta: "Für Updates anmelden",
     placeholder: "E-Mail eingeben",

@@ -14,9 +14,9 @@ export default function Header({ language, setLanguage }) {
           size="icon"
           onClick={toggleLanguage}
           aria-label="Toggle language"
-          className="text-gray-300 hover:text-white"
+          className="text-gray-300 hover:text-teal-400"
         >
-          <Globe className="h-10 w-10" />
+          <Globe />
         </Button>
       </nav>
     </header>
