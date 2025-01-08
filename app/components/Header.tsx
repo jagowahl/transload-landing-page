@@ -8,7 +8,7 @@ export default function Header({ language, setLanguage }) {
   return (
     <header className="bg-gray-800 border-b border-gray-700">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-5xl font-bold text-teal-400">transload.</Link>
+        <Link href="/" className="text-4xl font-bold text-teal-400">transload.</Link>
         <Button 
           variant="ghost" 
           size="icon"

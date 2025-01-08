@@ -7,6 +7,8 @@ import HowItWorks from './components/HowItWorks'
 import Benefits from './components/Benefits'
 import Team from './components/Team'
 import CTA from './components/CTA'
+import Partners from './components/Partners'
+import Footer from './components/Footer'
 
 export default function Home() {
   const [language, setLanguage] = useState('de')
@@ -23,8 +25,10 @@ export default function Home() {
         <Features language={language} />
         <HowItWorks language={language} />
         <Benefits language={language} />
-        <Team language={language} />
         <CTA language={language} />
+        <Team language={language} />
+        <Partners language={language} />
+        <Footer language={language} />
       </main>
     </div>
   )

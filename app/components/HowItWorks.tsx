@@ -18,7 +18,7 @@ const steps = {
     },
     {
       title: 'Continuous Improvement',
-      description: 'The AI learns and adapts, constantly improving efficiency over time.'
+      description: 'The system learns and adapts, constantly improving efficiency over time.'
     }
   ],
   de: [
