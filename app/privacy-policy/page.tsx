@@ -15,7 +15,6 @@ export default function PrivacyPolicyPage() {
 					{language === "en" ? "Privacy Policy" : "Datenschutzerklärung"}
 				</h1>
 				<div className="text-white space-y-4">
-					<h1>Datenschutzerklärung</h1>
 					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m716">
 						Präambel
 					</h2>
