@@ -47,6 +47,16 @@ export default function Team({ language }) {
             </div>
           ))}
         </div>
+        <p className="text-xl mb-8 text-gray-200 text-center">
+          <br />
+          <br />
+          {language === 'en' 
+            ? 'Want to be part of our team? Contact us at ' 
+            : 'Möchtest du Teil unseres Teams werden? Kontaktiere uns unter '}
+          <a href="mailto:contact@trans-load.de" className="underline">
+            contact@trans-load.de
+          </a>
+        </p>
       </div>
     </section>
   )
