@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Globe } from 'lucide-react'
 
@@ -8,7 +9,15 @@ export default function Header({ language, setLanguage }) {
   return (
     <header className="bg-gray-800 border-b border-gray-700">
       <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link href="/" className="text-4xl font-bold text-teal-400">transload.</Link>
+      <Link href="/" className="flex items-center">
+        <Image
+        src="./our_logo.svg"
+        alt="Company Logo"
+        width={200}
+        height={200}
+        className=""
+        />
+        </Link>
         <Button 
           variant="ghost" 
           size="icon"
