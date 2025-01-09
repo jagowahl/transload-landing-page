@@ -11,12 +11,11 @@ export default function PrivacyPolicyPage() {
 		<div className="min-h-screen bg-gray-900">
 			<Header language={language} setLanguage={setLanguage} />
 			<main className="container mx-auto px-4 py-20">
-				<h1 className="text-2xl font-bold mb-8 text-teal-400">
+				<h1 className="text-2xl font-bold mb-8 text-orange-500">
 					{language === "en" ? "Privacy Policy" : "Datenschutzerklärung"}
 				</h1>
 				<div className="text-white space-y-4">
-					<h1>Datenschutzerklärung</h1>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m716">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m716">
 						Präambel
 					</h2>
 					<p>
@@ -116,7 +115,7 @@ export default function PrivacyPolicyPage() {
 							</a>
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m3">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m3">
 						Verantwortlicher
 					</h2>
 					<p>
@@ -133,7 +132,7 @@ export default function PrivacyPolicyPage() {
 							https://www.trans-load.de/impressum
 						</a>
 					</p>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="mOverview">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="mOverview">
 						Übersicht der Verarbeitungen
 					</h2>
 					<p>
@@ -170,7 +169,7 @@ export default function PrivacyPolicyPage() {
 						<li>Öffentlichkeitsarbeit.</li>
 						<li>Absatzförderung.</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m2427">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m2427">
 						Maßgebliche Rechtsgrundlagen
 					</h2>
 					<p>
@@ -240,7 +239,7 @@ export default function PrivacyPolicyPage() {
 						gesetzliche Bedeutung der Begriffe wird jedoch im Rahmen der Geltung
 						des Schweizer DSG weiterhin nach dem Schweizer DSG bestimmt.
 					</p>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m27">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m27">
 						Sicherheitsmaßnahmen
 					</h2>
 					<p>
@@ -285,7 +284,7 @@ export default function PrivacyPolicyPage() {
 						signalisiert. Dies dient als ein Indikator für die Nutzer, dass ihre
 						Daten sicher und verschlüsselt übertragen werden.
 					</p>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m25">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m25">
 						Übermittlung von personenbezogenen Daten
 					</h2>
 					<p>
@@ -312,7 +311,7 @@ export default function PrivacyPolicyPage() {
 						Einwilligung der Betroffenen oder eine gesetzliche Erlaubnis
 						vorliegt.
 					</p>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m24">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m24">
 						Internationale Datentransfers
 					</h2>
 					<p>
@@ -355,7 +354,7 @@ export default function PrivacyPolicyPage() {
 						Datenschutzhinweise, welche von uns eingesetzten Diensteanbieter
 						unter dem Data Privacy Framework zertifiziert sind.
 					</p>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m12">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m12">
 						Allgemeine Informationen zur Datenspeicherung und Löschung
 					</h2>
 					<p>
@@ -449,7 +448,7 @@ export default function PrivacyPolicyPage() {
 							</ul>
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m10">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m10">
 						Rechte der betroffenen Personen
 					</h2>
 					<p>
@@ -516,7 +515,7 @@ export default function PrivacyPolicyPage() {
 							die Vorgaben der DSGVO verstößt.
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m225">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m225">
 						Bereitstellung des Onlineangebots und Webhosting
 					</h2>
 					<p>
@@ -649,7 +648,7 @@ export default function PrivacyPolicyPage() {
 							Dienstanbieter bereitgestellt.
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m182">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m182">
 						Kontakt- und Anfrageverwaltung
 					</h2>
 					<p>
@@ -731,7 +730,7 @@ export default function PrivacyPolicyPage() {
 							Framework (DPF).
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m17">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m17">
 						Newsletter und elektronische Benachrichtigungen
 					</h2>
 					<p>
@@ -871,7 +870,7 @@ export default function PrivacyPolicyPage() {
 							Framework (DPF).
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m638">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m638">
 						Werbliche Kommunikation via E-Mail, Post, Fax oder Telefon
 					</h2>
 					<p>
@@ -924,7 +923,7 @@ export default function PrivacyPolicyPage() {
 							f) DSGVO).
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m136">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m136">
 						Präsenzen in sozialen Netzwerken (Social Media)
 					</h2>
 					<p>
@@ -1077,7 +1076,7 @@ export default function PrivacyPolicyPage() {
 							.
 						</li>
 					</ul>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m15">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m15">
 						Änderung und Aktualisierung
 					</h2>
 					<p>
@@ -1095,7 +1094,7 @@ export default function PrivacyPolicyPage() {
 						bitten wir zu beachten, dass die Adressen sich über die Zeit ändern
 						können und bitten die Angaben vor Kontaktaufnahme zu prüfen.
 					</p>
-					<h2 className="text-xl font-bold mb-8 text-teal-400" id="m42">
+					<h2 className="text-xl font-bold mb-8 text-orange-500" id="m42">
 						Begriffsdefinitionen
 					</h2>
 					<p>
