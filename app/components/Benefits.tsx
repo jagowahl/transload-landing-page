@@ -4,16 +4,14 @@ import { CheckCircle } from "lucide-react";
 
 const benefits = {
 	en: [
-		"Reduce operational costs",
+		"Reduce operational costs from the first month, as fewer drivers are needed in the transshipment warehouse",
 		"Increase warehouse efficiency and throughput",
 		"Minimize forklift idle time and unnecessary movement",
-		"Achieve faster ROI compared to full automation",
 	],
 	de: [
-		"Reduzierung der Betriebskosten",
+		"Reduzierung der Betriebskosten ab dem ersten Monat, da weniger Fahrer auf dem Umschlaglager eingesetzt werden müssen",
 		"Steigerung der Lagereffizienz und des Durchsatzes",
 		"Minimierung von Gabelstapler-Leerlaufzeiten und unnötigen Bewegungen",
-		"Schnellerer ROI im Vergleich zur vollständigen Automatisierung",
 	],
 };
 
@@ -26,7 +24,7 @@ export default function Benefits({ language }) {
 						? "Benefits for Your Business"
 						: "Vorteile für Ihr Unternehmen"}
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="grid grid-cols-1 gap-8">
 					{benefits[language].map((benefit, index) => (
 						<motion.div
 							key={index}
