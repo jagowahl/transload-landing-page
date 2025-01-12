@@ -7,7 +7,7 @@ export default function Header({ language, setLanguage }) {
 	const toggleLanguage = () => setLanguage(language === "en" ? "de" : "en");
 
 	return (
-		<header className="sticky top-0 bg-gray-800 border-b border-gray-700 z-10">
+		<header className="sticky top-0 bg-gray-800 border-b border-gray-700 z-50">
 			<nav className="container mx-auto px-4 py-4 flex justify-between items-center">
 				<Link href="/" className="flex items-center">
 					<Image
