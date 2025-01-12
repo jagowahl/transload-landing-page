@@ -4,7 +4,7 @@ export const metadata = {
 	title: "transload",
 	description: "Revolutionizing Intralogistics",
 	icons: {
-		icon: './favicon.svg',
+		icon: './favicon.png',
 	  },
 };
 
