@@ -1,7 +1,7 @@
 import "@/app/_styles/globals.css";
 
 export const metadata = {
-	title: "transload.",
+	title: "transload",
 	description: "Revolutionizing Intralogistics",
 	icons: {
 		icon: './favicon.svg',
