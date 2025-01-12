@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Linkedin, Mail } from 'lucide-react';
+import { Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const teamMembers = [
@@ -21,22 +21,24 @@ const teamMembers = [
 ];
 
 const content = {
-  en: {
-    title: "Our Team",
-    joinUs: "Want to be part of our team?",
-    contactUs: "Contact Us",
-    joinTeam: "Join Our Team",
-  },
-  de: {
-    title: "Unser Team",
-    joinUs: "Möchtest du Teil unseres Teams werden?",
-    contactUs: "Kontaktiere uns",
-    joinTeam: "Unserem Team beitreten",
-  }
+	en: {
+		title: "Our Team",
+		joinUs: "Want to be part of our team?",
+		motivation:
+			"We are always looking for talented and motivated people to enrich our team.",
+		joinTeam: "Join Our Team",
+	},
+	de: {
+		title: "Unser Team",
+		joinUs: "Möchtest du Teil unseres Teams werden?",
+		motivation:
+			"Wir suchen immer nach talentierten und motivierten Leuten, die unser Team bereichern.",
+		joinTeam: "Unserem Team beitreten",
+	},
 };
 
-export default function Team({ language }: { language: 'en' | 'de' }) {
-	const { title, joinUs, contactUs, joinTeam } = content[language];
+export default function Team({ language }: { language: "en" | "de" }) {
+	const { title, joinUs, motivation, joinTeam } = content[language];
 
 	return (
 		<section className="py-20 bg-gray-900">
@@ -75,8 +77,16 @@ export default function Team({ language }: { language: 'en' | 'de' }) {
 				</div>
 				<div className="relative">
 					<div className="relative z-10 py-12 px-6 text-center">
-						<Button asChild className="bg-orange-500 text-white hover:bg-orange-600 transition-colors duration-300 text-lg py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105">
-							<Link href="mailto:contact@trans-load.de" className="flex items-center justify-center">
+						<div className="text-3xl font-bold text-white mb-4">{joinUs}</div>
+						<div className="text-lg text-gray-300 mb-8">{motivation}</div>
+						<Button
+							asChild
+							className="bg-orange-500 text-white hover:bg-orange-600 transition-colors duration-300 text-lg py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105"
+						>
+							<Link
+								href="mailto:contact@trans-load.de"
+								className="flex items-center justify-center"
+							>
 								<Mail className="mr-2 h-5 w-5" />
 								<span>{joinTeam}</span>
 							</Link>
@@ -87,4 +97,3 @@ export default function Team({ language }: { language: 'en' | 'de' }) {
 		</section>
 	);
 }
-
