@@ -24,7 +24,7 @@ export default function Benefits({ language }) {
 						? "Benefits for Your Business"
 						: "Vorteile für Ihr Unternehmen"}
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+				<div className="grid grid-cols-1 gap-8">
 					{benefits[language].map((benefit, index) => (
 						<motion.div
 							key={index}
