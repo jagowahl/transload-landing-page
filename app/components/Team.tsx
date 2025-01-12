@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { Linkedin } from "lucide-react";
+import Link from "next/link";
+import { Linkedin, Mail } from 'lucide-react';
+import { Button } from "@/components/ui/button";
 
 const teamMembers = [
 	{
@@ -18,14 +20,31 @@ const teamMembers = [
 	},
 ];
 
-export default function Team({ language }) {
+const content = {
+  en: {
+    title: "Our Team",
+    joinUs: "Want to be part of our team?",
+    contactUs: "Contact Us",
+    joinTeam: "Join Our Team",
+  },
+  de: {
+    title: "Unser Team",
+    joinUs: "Möchtest du Teil unseres Teams werden?",
+    contactUs: "Kontaktiere uns",
+    joinTeam: "Unserem Team beitreten",
+  }
+};
+
+export default function Team({ language }: { language: 'en' | 'de' }) {
+	const { title, joinUs, contactUs, joinTeam } = content[language];
+
 	return (
 		<section className="py-20 bg-gray-900">
 			<div className="container mx-auto px-4">
 				<h2 className="text-3xl font-bold text-center mb-12 text-orange-500">
-					{language === "en" ? "Our Team" : "Unser Team"}
+					{title}
 				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center mb-16">
 					{teamMembers.map((member, index) => (
 						<div
 							key={index}
@@ -54,17 +73,18 @@ export default function Team({ language }) {
 						</div>
 					))}
 				</div>
-				<p className="text-xl mb-8 text-gray-200 text-center">
-					<br />
-					<br />
-					{language === "en"
-						? "Want to be part of our team? Contact us at "
-						: "Möchtest du Teil unseres Teams werden? Kontaktiere uns unter "}
-					<a href="mailto:contact@trans-load.de" className="underline">
-						contact@trans-load.de
-					</a>
-				</p>
+				<div className="relative">
+					<div className="relative z-10 py-12 px-6 text-center">
+						<Button asChild className="bg-orange-500 text-white hover:bg-orange-600 transition-colors duration-300 text-lg py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105">
+							<Link href="mailto:contact@trans-load.de" className="flex items-center justify-center">
+								<Mail className="mr-2 h-5 w-5" />
+								<span>{joinTeam}</span>
+							</Link>
+						</Button>
+					</div>
+				</div>
 			</div>
 		</section>
 	);
 }
+

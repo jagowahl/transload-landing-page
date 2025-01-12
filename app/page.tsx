@@ -6,7 +6,7 @@ import Features from './components/Features'
 import HowItWorks from './components/HowItWorks'
 import Benefits from './components/Benefits'
 import Team from './components/Team'
-import CTA from './components/CTA'
+import GetInTouch from './components/GetInTouch'
 import Partners from './components/Partners'
 import Footer from './components/Footer'
 
@@ -25,7 +25,7 @@ export default function Home() {
         <Features language={language} />
         <HowItWorks language={language} />
         <Benefits language={language} />
-        <CTA language={language} />
+        <GetInTouch language={language} />
         <Team language={language} />
         <Partners language={language} />
         <Footer language={language} />
