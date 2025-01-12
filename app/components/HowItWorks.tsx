@@ -7,17 +7,22 @@ const steps = {
 		{
 			title: "Integration",
 			description:
-				"Seamlessly integrate our system with your existing warehouse infrastructure.",
+				"Seamless integration of our system into your existing warehouse infrastructure.",
 		},
 		{
 			title: "Data Collection",
 			description:
-				"Gather real-time data on forklift movements and warehouse operations.",
+				"Real-time data collection of warehouse operations, such as the check-in of new pallets in the transshipment warehouse.",
 		},
 		{
-			title: "Analysis & Optimization",
+			title: "Route Optimization",
 			description:
-				"Advanced algorithms analyze data to identify inefficiencies and optimize routes.",
+				"We use state-of-the-art optimization tools to calculate the most efficient routes in real-time.",
+		},
+		{
+			title: "Forklift Navigation",
+			description:
+				"Our system individually navigates each driver through the warehouse with specific driving tasks.",
 		},
 		{
 			title: "Continuous Improvement",
@@ -34,12 +39,17 @@ const steps = {
 		{
 			title: "Datenerfassung",
 			description:
-				"Erfassung von Echtzeitdaten über Gabelstaplerbewegungen und Lageroperationen.",
+				"Erfassung von Echtzeitdaten über Lageroperationen wie das Einchecken von neuen Paletten auf dem Umschlaglager.",
 		},
 		{
-			title: "Analyse & Optimierung",
+			title: "Routenoptimierung",
 			description:
-				"Fortschrittliche Algorithmen analysieren Daten, um Ineffizienzen zu identifizieren und Routen zu optimieren.",
+				"Wir setzen modernste Optimierungstools ein, um die effizientesten Fahrwege in Echtzeit zu berechnen.",
+		},
+		{
+			title: "Navigation der Gabelstapler",
+			description:
+				"Unser System navigiert jeden Fahrer individuell in Form von Fahraufträgen über das Lager.",
 		},
 		{
 			title: "Kontinuierliche Verbesserung",

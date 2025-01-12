@@ -4,18 +4,18 @@ const features = {
 	en: [
 		{
 			icon: Forklift,
+			description: "Our algorithms optimize your forklift routes in real-time",
 			title: "Smart Routing",
-			description: "Our algorithms optimize your forklift paths in real-time",
-		},
-		{
-			icon: BarChart2,
-			title: "Performance Analytics",
-			description: "Comprehensive data insights for continuous improvement",
 		},
 		{
 			icon: Users,
 			title: "Human-Centric Design",
 			description: "Boost driver productivity and work comfort",
+		},
+		{
+			icon: BarChart2,
+			title: "Performance Analytics",
+			description: "Comprehensive data insights for continuous improvement",
 		},
 	],
 	de: [
@@ -26,15 +26,15 @@ const features = {
 				"Unsere Algorithmen optimieren Ihre Gabelstapler-Routen in Echtzeit",
 		},
 		{
-			icon: BarChart2,
-			title: "Leistungsanalyse",
-			description: "Umfassende Dateneinblicke für kontinuierliche Verbesserung",
-		},
-		{
 			icon: Users,
 			title: "Menschenzentriertes Design",
 			description:
 				"Steigerung der Produktivität und des Arbeitskomforts der Fahrer",
+		},
+		{
+			icon: BarChart2,
+			title: "Leistungsanalyse",
+			description: "Umfassende Dateneinblicke für kontinuierliche Verbesserung",
 		},
 	],
 };

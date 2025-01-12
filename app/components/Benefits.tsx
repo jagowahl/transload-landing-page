@@ -4,16 +4,14 @@ import { CheckCircle } from "lucide-react";
 
 const benefits = {
 	en: [
-		"Reduce operational costs",
+		"Reduce operational costs from the first month, as fewer drivers are needed in the transshipment warehouse",
 		"Increase warehouse efficiency and throughput",
 		"Minimize forklift idle time and unnecessary movement",
-		"Achieve faster ROI compared to full automation",
 	],
 	de: [
-		"Reduzierung der Betriebskosten",
+		"Reduzierung der Betriebskosten ab dem ersten Monat, da weniger Fahrer auf dem Umschlaglager eingesetzt werden müssen",
 		"Steigerung der Lagereffizienz und des Durchsatzes",
 		"Minimierung von Gabelstapler-Leerlaufzeiten und unnötigen Bewegungen",
-		"Schnellerer ROI im Vergleich zur vollständigen Automatisierung",
 	],
 };
 
