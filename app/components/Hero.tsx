@@ -6,14 +6,12 @@ export default function Hero({ language }) {
 		en: {
 			title: "Revolutionizing Intralogistics",
 			description:
-				"Supercharge your transshipment warehouse with smart forklift control",
-			cta: "Sign up for newsletter",
+				"Supercharge Your Transshipment Warehouse with Our Smart Forklift Navigation System",
 		},
 		de: {
 			title: "Revolution der Intralogistik",
 			description:
-				"Optimieren Sie Ihr Umschlaglager mit smart gesteuerten Gabelstaplern",
-			cta: "Für Newsletter anmelden",
+				"Optimieren Sie Ihr Umschlaglager mit unserem intelligenten Gabelstapler-Navigationssystem",
 		},
 	};
 
