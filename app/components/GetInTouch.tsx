@@ -1,13 +1,21 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardFooter,
+	CardHeader,
+	CardTitle,
+} from "@/components/ui/card";
 import { Mail, Calendar, Newspaper } from "lucide-react";
 
 const content = {
 	en: {
 		title: "Ready to Revolutionize Your Transshipment Warehouse?",
+		header_title: "Connect With Us",
 		description: "Transform your operations with our smart control systems.",
-		cta: "Sign up for newsletter",
+		cta: "Sign up for Newsletter",
 		newsletterUrl: "https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb",
 		meeting: "Schedule a Zoom Meeting",
 		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
@@ -17,6 +25,7 @@ const content = {
 	},
 	de: {
 		title: "Bereit, Ihr Umschlagslager zu revolutionieren?",
+		header_title: "Wählen Sie Ihre Kontaktmöglichkeit",
 		description:
 			"Transformieren Sie Ihre Abläufe mit unseren smarten Steuerungssystemen.",
 		cta: "Für Newsletter anmelden",
@@ -40,11 +49,11 @@ const ReusableButton = ({ href, cta, icon }: ReusableButtonProps) => {
 		<Button
 			asChild
 			variant="outline"
-			className="bg-orange-500 text-white hover:bg-orange-600 transition-colors duration-300 text-lg py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105"
+			className="w-full h-auto flex-row justify-start bg-orange-500 hover:bg-orange-600 hover:shadow-xl hover:scale-105"
 		>
-			<Link href={href} className="flex items-center justify-start">
+			<Link href={href}>
 				{icon}
-				<span>{cta}</span>
+				<div className="w-full whitespace-normal text-xl">{cta}</div>
 			</Link>
 		</Button>
 	);
@@ -53,6 +62,7 @@ const ReusableButton = ({ href, cta, icon }: ReusableButtonProps) => {
 export default function GetInTouch({ language }) {
 	const {
 		title,
+		header_title,
 		description,
 		cta,
 		newsletterUrl,
@@ -68,26 +78,20 @@ export default function GetInTouch({ language }) {
 			<div className="container mx-auto px-4 text-center">
 				<h2 className="text-3xl font-bold mb-4 text-white">{title}</h2>
 				<p className="text-xl mb-8 text-gray-200">{description}</p>
-				<Card className="w-full max-w-md mx-auto bg-white/10 text-white pt-0">
-					<CardContent className="grid gap-4 pt-4">
-						<ReusableButton
-							href={newsletterUrl}
-							cta={cta}
-							icon={<Newspaper className="mr-2 h-4 w-4" aria-hidden="true" />}
-						/>
-						<ReusableButton
-							href={meetingUrl}
-							cta={meeting}
-							icon={<Calendar className="mr-2 h-4 w-4" aria-hidden="true" />}
-						/>
-						<ReusableButton
-							href={emailUrl}
-							cta={email}
-							icon={<Mail className="mr-2 h-4 w-4" aria-hidden="true" />}
-						/>
+				<Card className="w-full max-w-md mx-auto bg-white/10 text-white text-left">
+				<CardHeader>
+					<CardTitle className="text-xl">{header_title}</CardTitle>
+					</CardHeader>
+					<CardContent>
+					<div className="space-y-4">
+						<ReusableButton href={newsletterUrl} cta={cta} icon={<Newspaper className="mr-2 h-5 w-5"/>} />
+						<ReusableButton href={meetingUrl} cta={meeting} icon={<Calendar className="mr-2 h-5 w-5"/>}/>
+						<ReusableButton href={emailUrl} cta={email}	 icon={<Mail className="mr-2 h-5 w-5"/>}/>
+					</div>
 					</CardContent>
+					<CardFooter>{footer}
+					</CardFooter>
 				</Card>
-				<p className="text-xl text-gray-300 mt-4">{footer}</p>
 			</div>
 		</section>
 	);

@@ -81,13 +81,13 @@ export default function Team({ language }: { language: "en" | "de" }) {
 						<div className="text-lg text-gray-300 mb-8">{motivation}</div>
 						<Button
 							asChild
-							className="bg-orange-500 text-white hover:bg-orange-600 transition-colors duration-300 text-lg py-3 px-8 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105"
+							className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl hover:scale-105"
 						>
 							<Link
 								href="mailto:contact@trans-load.de"
 								className="flex items-center justify-center"
 							>
-								<Mail className="mr-2 h-5 w-5" />
+								<Mail className="mr-2" />
 								<span>{joinTeam}</span>
 							</Link>
 						</Button>

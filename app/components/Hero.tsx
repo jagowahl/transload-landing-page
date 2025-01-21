@@ -23,7 +23,7 @@ export default function Hero({ language }) {
 		<section className="relative py-20 overflow-hidden">
 			<div className="absolute inset-0 z-0">
 				<div className="absolute inset-0 bg-gradient-to-br from-orange-800 to-neutral-700 opacity-70"></div>
-				<div className="absolute inset-0 bg-[url('/AdobeStock_109470102.jpeg')] bg-cover bg-center mix-blend-overlay"></div>
+				<div className="absolute inset-0 bg-[url('/bg_image.png')] bg-cover bg-center mix-blend-overlay"></div>
 			</div>
 			<div className="container mx-auto px-4 relative z-10">
 				<div className="text-center">
