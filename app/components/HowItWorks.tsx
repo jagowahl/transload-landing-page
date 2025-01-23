@@ -26,7 +26,7 @@ const steps = {
 		{
 			title: "Forklift Navigation",
 			description:
-				"Our system individually navigates each driver through the warehouse with specific driving orders. Expereience our App below.",
+				"Our system individually navigates each driver through the warehouse with specific driving orders. Experience our App below.",
 		},
 		{
 			title: "Continuous Improvement",
