@@ -65,12 +65,12 @@ const steps = {
 
 const content = {
 	en: {
-		title: "App Mockup",
+		title: "Experience Our App",
 		description: "A simple interface for forklift drivers",
 		src: "./app_mock_up_eng.svg"
 	},
 	de: {
-		title: "App Mockup",
+		title: "Erlebe unsere App",
 		description: "Eine einfache Benutzeroberfläche für Gabelstaplerfahrer",
 		src: "./app_mock_up_de.svg"
 	}
