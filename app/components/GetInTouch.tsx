@@ -25,7 +25,7 @@ const content = {
 	},
 	de: {
 		title: "Bereit, Ihr Umschlagslager zu revolutionieren?",
-		header_title: "Wählen Sie Ihre Kontaktmöglichkeit",
+		header_title: "Kontaktieren Sie uns",
 		description:
 			"Transformieren Sie Ihre Abläufe mit unseren smarten Steuerungssystemen.",
 		cta: "Für Newsletter anmelden",
@@ -84,7 +84,6 @@ export default function GetInTouch({ language }) {
 					</CardHeader>
 					<CardContent>
 					<div className="space-y-4">
-						<ReusableButton href={newsletterUrl} cta={cta} icon={<Newspaper className="mr-2 h-5 w-5"/>} />
 						<ReusableButton href={meetingUrl} cta={meeting} icon={<Calendar className="mr-2 h-5 w-5"/>}/>
 						<ReusableButton href={emailUrl} cta={email}	 icon={<Mail className="mr-2 h-5 w-5"/>}/>
 					</div>
