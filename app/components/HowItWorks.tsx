@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 import { motion } from "framer-motion";
 
-  
+
 
 const steps = {
 	en: [
@@ -104,17 +104,17 @@ export default function HowItWorks({ language }) {
 				</div>
 				<br />
 				<Card className="container bg-gray-800">
-            <CardHeader>
-              <CardTitle>{content[language].title}</CardTitle>
-              <CardDescription>{content[language].description}</CardDescription>
-            </CardHeader>
-            <CardContent>
-			<div className="w-full overflow-x-auto items-center">
-				<div className="relative h-[calc(45vh)] min-w-[100vw] items-start" style={  {aspectRatio: "3 / 1"} }>
-					<Image src= {content[language].src} alt="mock" fill style={{ objectFit: "fill" }}  />
-				</div>
-			</div>
-			</CardContent>
+					<CardHeader>
+						<CardTitle>{content[language].title}</CardTitle>
+						<CardDescription>{content[language].description}</CardDescription>
+					</CardHeader>
+					<CardContent>
+						<div className="w-full overflow-x-auto items-center">
+							<div className="relative h-[calc(45vh)] min-w-[100vw] items-start" style={{ aspectRatio: "3 / 1" }}>
+								<Image src={content[language].src} alt="App Mockup" fill style={{ objectFit: "fill" }} />
+							</div>
+						</div>
+					</CardContent>
 				</Card>
 			</div>
 		</section>
