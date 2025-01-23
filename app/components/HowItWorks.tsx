@@ -26,7 +26,7 @@ const steps = {
 		{
 			title: "Forklift Navigation",
 			description:
-				"Our system individually navigates each driver through the warehouse with specific driving orders. See mockup below.",
+				"Our system individually navigates each driver through the warehouse with specific driving orders. Expereience our App below.",
 		},
 		{
 			title: "Continuous Improvement",
@@ -53,7 +53,7 @@ const steps = {
 		{
 			title: "Navigation der Gabelstapler",
 			description:
-				"Unser System navigiert jeden Fahrer individuell in Form von Fahraufträgen über das Lager. Siehe Mockup unten.",
+				"Unser System navigiert jeden Fahrer individuell in Form von Fahraufträgen über das Lager. Erlebe unsere App unten.",
 		},
 		{
 			title: "Kontinuierliche Verbesserung",
