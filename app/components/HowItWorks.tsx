@@ -1,6 +1,10 @@
 "use client";
+import Image from "next/image";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+
 import { motion } from "framer-motion";
-import ani from "./ani.gif";
+
+  
 
 const steps = {
 	en: [
@@ -22,7 +26,7 @@ const steps = {
 		{
 			title: "Forklift Navigation",
 			description:
-				"Our system individually navigates each driver through the warehouse with specific driving tasks.",
+				"Our system individually navigates each driver through the warehouse with specific driving orders. See mockup below.",
 		},
 		{
 			title: "Continuous Improvement",
@@ -49,7 +53,7 @@ const steps = {
 		{
 			title: "Navigation der Gabelstapler",
 			description:
-				"Unser System navigiert jeden Fahrer individuell in Form von Fahraufträgen über das Lager.",
+				"Unser System navigiert jeden Fahrer individuell in Form von Fahraufträgen über das Lager. Siehe Mockup unten.",
 		},
 		{
 			title: "Kontinuierliche Verbesserung",
@@ -58,6 +62,19 @@ const steps = {
 		},
 	],
 };
+
+const content = {
+	en: {
+		title: "App Mockup",
+		description: "A simple interface for forklift drivers",
+		src: "./app_mock_up_eng.svg"
+	},
+	de: {
+		title: "App Mockup",
+		description: "Eine einfache Benutzeroberfläche für Gabelstaplerfahrer",
+		src: "./app_mock_up_de.svg"
+	}
+}
 
 export default function HowItWorks({ language }) {
 	return (
@@ -85,6 +102,20 @@ export default function HowItWorks({ language }) {
 						))}
 					</div>
 				</div>
+				<br />
+				<Card className="container bg-gray-800">
+            <CardHeader>
+              <CardTitle>{content[language].title}</CardTitle>
+              <CardDescription>{content[language].description}</CardDescription>
+            </CardHeader>
+            <CardContent>
+			<div className="w-full overflow-x-auto items-center">
+				<div className="relative h-[calc(45vh)] min-w-[100vw] items-start" style={  {aspectRatio: "3 / 1"} }>
+					<Image src= {content[language].src} alt="mock" fill style={{ objectFit: "fill" }}  />
+				</div>
+			</div>
+			</CardContent>
+				</Card>
 			</div>
 		</section>
 	);
