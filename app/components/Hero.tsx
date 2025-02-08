@@ -6,12 +6,12 @@ import { Mail, Calendar, Newspaper } from "lucide-react";
 export default function Hero({ language }) {
 	const content = {
 		en: {
-			title: "Revolutionizing Intralogistics",
+			title: "Fewer Empty Runs in the Transshipment Warehouse",
 			description:
 				"Supercharge Your Transshipment Warehouse with Our Smart Forklift Navigation System",
 		},
 		de: {
-			title: "Revolution der Intralogistik",
+			title: "Weniger Leerfahrten im Umschlaglager",
 			description:
 				"Optimieren Sie Ihr Umschlaglager mit unserem intelligenten Gabelstapler-Navigationssystem",
 		},

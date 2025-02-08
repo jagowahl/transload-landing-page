@@ -12,7 +12,7 @@ import { Mail, Calendar, Newspaper } from "lucide-react";
 
 const content = {
 	en: {
-		title: "Ready to Revolutionize Your Transshipment Warehouse?",
+		title: "Ready to reduce your empty runs in the transshipment warehouse?",
 		header_title: "Connect With Us",
 		description: "Transform your operations with our smart control systems.",
 		cta: "Sign up for Newsletter",
@@ -24,7 +24,7 @@ const content = {
 		footer: "We look forward to hearing from you!",
 	},
 	de: {
-		title: "Bereit, Ihr Umschlagslager zu revolutionieren?",
+		title: "Bereit, Ihre Leerfahrten im Umschlaglager zu reduzieren?",
 		header_title: "Kontaktieren Sie uns",
 		description:
 			"Transformieren Sie Ihre Abläufe mit unseren smarten Steuerungssystemen.",
