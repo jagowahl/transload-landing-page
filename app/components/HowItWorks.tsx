@@ -1,122 +1,166 @@
-"use client";
-import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+"use client"
 
-import { motion } from "framer-motion";
-
-
+import { useRef } from "react"
+import Image from "next/image"
+import { motion, useInView} from "framer-motion"
+import { Puzzle, Forklift, LayoutDashboard, Route} from "lucide-react"
 
 const steps = {
 	en: [
-		{
-			title: "Integration",
-			description:
-				"Seamless integration of our system into your existing warehouse infrastructure.",
-		},
-		{
-			title: "Data Collection",
-			description:
-				"Real-time data collection of warehouse operations, such as the check-in of new pallets in the transshipment warehouse.",
-		},
-		{
-			title: "Route Optimization",
-			description:
-				"We use state-of-the-art optimization tools to calculate the most efficient routes in real-time.",
-		},
-		{
-			title: "Forklift Navigation",
-			description:
-				"Our system individually navigates each driver through the warehouse with specific driving orders. Experience our App below.",
-		},
-		{
-			title: "Continuous Improvement",
-			description:
-				"The system learns and adapts, constantly improving efficiency over time.",
-		},
+	  {
+		title: "Integration",
+		description: "Easily integrate our system into your existing warehouse infrastructure for seamless operations.",
+		icon: Puzzle,
+	  },
+	  {
+		title: "Route Optimization",
+		description: "Our smart algorithms calculate the most efficient forklift routes, minimizing empty runs and improving efficiency.",
+		icon: Route,
+		image: "./ani.gif",
+	  },
+	  {
+		title: "Forklift Navigation",
+		description: "Provide forklift drivers with precise, turn-by-turn navigation to streamline movement within the warehouse.",
+		icon: Forklift,
+		image: "./app_mock_up_eng.svg",
+	  },
+	  {
+		title: "Real-Time Analysis",
+		description: "Gain in-depth insights into warehouse dynamics with our real-time analytics dashboard. Track movements, monitor performance metrics, and stay informed with live data.",
+		icon: LayoutDashboard,
+		image: "./screen_2.png",
+	  },
 	],
 	de: [
-		{
-			title: "Integration",
-			description:
-				"Nahtlose Integration unseres Systems in Ihre bestehende Lagerinfrastruktur.",
-		},
-		{
-			title: "Datenerfassung",
-			description:
-				"Erfassung von Echtzeitdaten über Lageroperationen wie das Einchecken von neuen Paletten auf dem Umschlaglager.",
-		},
-		{
-			title: "Routenoptimierung",
-			description:
-				"Wir setzen modernste Optimierungstools ein, um die effizientesten Fahrwege in Echtzeit zu berechnen.",
-		},
-		{
-			title: "Navigation der Gabelstapler",
-			description:
-				"Unser System navigiert jeden Fahrer individuell in Form von Fahraufträgen über das Lager. Erlebe unsere App unten.",
-		},
-		{
-			title: "Kontinuierliche Verbesserung",
-			description:
-				"Das System lernt und passt sich an, wodurch die Effizienz im Laufe der Zeit ständig verbessert wird.",
-		},
+	  {
+		title: "Integration",
+		description: "Integrieren Sie unser System mühelos in Ihre bestehende Lagerinfrastruktur für einen reibungslosen Betrieb.",
+		icon: Puzzle,
+	  },
+	  {
+		title: "Routenoptimierung",
+		description: "Unsere intelligenten Algorithmen berechnen die effizientesten Gabelstaplerrouten, reduzieren Leerfahrten und steigern die Effizienz.",
+		icon: Route,
+		image: "./ani.gif",
+	  },
+	  {
+		title: "Gabelstapler-Navigation",
+		description: "Bieten Sie Gabelstaplerfahrern eine präzise, schrittweise Navigation, um ihre Wege im Lager zu optimieren.",
+		icon: Forklift,
+		image: "./app_mock_up_de.svg",
+	  },
+	  {
+		title: "Echtzeit-Analyse",
+		description: "Erhalten Sie tiefgehende Einblicke in die Lagerdynamik mit unserem Echtzeit-Analyse-Dashboard. Verfolgen Sie Bewegungen, überwachen Sie Leistungskennzahlen und bleiben Sie mit Live-Daten stets informiert.",
+		icon: LayoutDashboard,
+		image: "./screen_2.png",
+	  },
 	],
-};
+  };
+  
 
-const content = {
-	en: {
-		title: "Experience Our App",
-		description: "A simple interface for forklift drivers",
-		src: "./app_mock_up_eng.svg"
-	},
-	de: {
-		title: "Erlebe unsere App",
-		description: "Eine einfache Benutzeroberfläche für Gabelstaplerfahrer",
-		src: "./app_mock_up_de.svg"
-	}
-}
-
-export default function HowItWorks({ language }) {
+const StepComponent = ({ step, index, totalSteps, language }) => {
+	const ref = useRef(null)
+	const isInView = useInView(ref, { once: true, margin: "-100px" })
+  
 	return (
-		<section className="py-20 bg-gray-900">
-			<div className="container mx-auto px-4">
-				<h2 className="text-3xl font-bold text-center mb-12 text-orange-500">
-					{language === "en" ? "How It Works" : "So funktioniert's"}
-				</h2>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-					<img src="./ani.gif" alt="animation" />
-					<div>
-						{steps[language].map((step, index) => (
-							<motion.div
-								key={index}
-								initial={{ opacity: 0, y: 20 }}
-								animate={{ opacity: 1, y: 0 }}
-								transition={{ duration: 0.5, delay: index * 0.1 }}
-								className="mb-6"
-							>
-								<h3 className="text-xl font-semibold mb-2 text-white">
-									{index + 1}. {step.title}
-								</h3>
-								<p className="text-gray-300">{step.description}</p>
-							</motion.div>
-						))}
-					</div>
-				</div>
-				<br />
-				<Card className="container bg-gray-800">
-					<CardHeader>
-						<CardTitle>{content[language].title}</CardTitle>
-						<CardDescription>{content[language].description}</CardDescription>
-					</CardHeader>
-					<CardContent>
-						<div className="w-full overflow-x-auto items-center">
-							<div className="relative h-[calc(45vh)] min-w-[100vw] items-start" style={{ aspectRatio: "3 / 1" }}>
-								<Image src={content[language].src} alt="App Mockup" fill style={{ objectFit: "fill" }} />
-							</div>
-						</div>
-					</CardContent>
-				</Card>
+	  <motion.div
+		ref={ref}
+		initial={{ opacity: 0, y: 50 }}
+		animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+		transition={{ duration: 0.5, delay: index * 0.2 }}
+		className="flex flex-col sm:flex-row items-start mb-12 last:mb-0"
+	  >
+		<div className="flex-shrink-0 mr-4 mb-4 sm:mb-0">
+		  <div className="w-12 h-12 bg-orange-500 rounded-full flex items-center justify-center text-xl font-bold text-white">
+			{index + 1}
+		  </div>
+		</div>
+		<div className="flex-grow w-full sm:w-auto">
+		  <div className="bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg">
+			<div className="flex items-center mb-4">
+			  <step.icon className="w-6 h-6 sm:w-8 sm:h-8 text-orange-500 mr-3" />
+			  <h3 className="text-xl sm:text-xl font-bold text-white">{step.title}</h3>
 			</div>
-		</section>
-	);
-}
+			<p className="text-gray-300 text-base sm:text-lg leading-relaxed mb-4">{step.description}</p>
+			{step.image && (
+			  <div className="mt-4">
+				<Image
+				  src={step.image || "/placeholder.svg"}
+				  alt={step.title}
+				  width={index === 1 ? 150 : 300}
+				  height={index === 1 ? 100 : 200}
+				  className={`rounded-lg w-full h-auto ${index === 1 ? "max-w-[400px]" : ""} ${
+					index === 3 ? "shadow-2xl" : ""
+				  }`}
+				/>
+			  </div>
+			)}
+		  </div>
+		</div>
+		{index < totalSteps - 1 && (
+		  <div className="hidden sm:flex flex-shrink-0 ml-4 w-12 justify-center">
+			<div className="w-1 h-full bg-orange-500 my-4"></div>
+		  </div>
+		)}
+	  </motion.div>
+	)
+  }
+  
+  export default function HowItWorks({ language = "en" }) {
+	const containerRef = useRef(null)
+	const totalSteps = steps[language].length
+	const lineHeight = `calc(100% - ${totalSteps * 140}px)`
+  
+	return (
+	  <section
+		className="py-16 sm:py-24 bg-gray-900  text-white overflow-hidden"
+		ref={containerRef}
+	  >
+		<div className="container mx-auto px-4 sm:px-6 lg:px-8">
+		  <motion.div
+			initial={{ opacity: 0, y: -20 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5 }}
+			className="text-center mb-12 sm:mb-16"
+		  >
+			<h2 className="text-3xl sm:text-3xl font-bold mb-4 text-orange-500">
+			  {language === "en" ? "How It Works" : "So funktioniert's"}
+			</h2>
+			<p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+			  {language === "en"
+				? "Discover how our innovative system transforms your warehouse operations"
+				: "Entdecken Sie, wie unser innovatives System Ihre Lageroperationen transformiert"}
+			</p>
+		  </motion.div>
+		  <div className="relative max-w-3xl mx-auto">
+			<div
+			  className="absolute left-6 top-6 w-1 bg-orange-500 hidden sm:block"
+			  style={{
+				height: lineHeight,
+			  }}
+			/>
+			<div className="relative z-10">
+			  {steps[language].map((step, index) => (
+				<StepComponent
+				  key={index}
+				  step={step}
+				  index={index}
+				  totalSteps={steps[language].length}
+				  language={language}
+				/>
+			  ))}
+			</div>
+		  </div>
+		  <motion.div
+			initial={{ opacity: 0, y: 20 }}
+			animate={{ opacity: 1, y: 0 }}
+			transition={{ duration: 0.5, delay: 1 }}
+			className="flex justify-center mt-12 sm:mt-16"
+		  >
+		  </motion.div>
+		</div>
+	  </section>
+	)
+  }
+  
