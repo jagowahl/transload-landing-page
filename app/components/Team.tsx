@@ -8,7 +8,7 @@ const teamMembers = [
 		name: "Nils Börner",
 		role: "Co-Founder",
 		image:
-			"https://media.licdn.com/dms/image/v2/D4D03AQGAtgcFqi2DoQ/profile-displayphoto-shrink_800_800/B4DZN_w2gWHoAc-/0/1733015334312?e=1741219200&v=beta&t=Au4ZvgIl4ziTTTLgqakDvlhpiAirVIFPBtQOBsdTcL8",
+			"https://media.licdn.com/dms/image/v2/D4D03AQF1zYpvefEcoQ/profile-displayphoto-shrink_800_800/B4DZUYXlS_GcAY-/0/1739870590612?e=1745452800&v=beta&t=ySHh6bRA7r_dIFSywgu_62bgSFn2QMYdLF1FlqWkSAY",
 		linkedin: "https://www.linkedin.com/in/boenils/",
 	},
 	{
