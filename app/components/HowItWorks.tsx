@@ -86,23 +86,21 @@ const StepComponent = ({ step, index, totalSteps, language }) => {
 			{step.image && (
 			  <div className="mt-4">
 				<Image
-				  src={step.image || "/placeholder.svg"}
+				  src={step.image}
 				  alt={step.title}
-				  width={index === 1 ? 150 : 300}
-				  height={index === 1 ? 100 : 200}
+				  width={300}
+				  height={200}
 				  className={`rounded-lg w-full h-auto ${index === 1 ? "max-w-[400px]" : ""} ${
-					index === 3 ? "shadow-2xl" : ""
+					index === 3 ? "drop-shadow-2xl shadow-2xl" : ""
 				  }`}
 				/>
 			  </div>
 			)}
 		  </div>
 		</div>
-		{index < totalSteps - 1 && (
-		  <div className="hidden sm:flex flex-shrink-0 ml-4 w-12 justify-center">
-			<div className="w-1 h-full bg-orange-500 my-4"></div>
-		  </div>
-		)}
+		<div className="hidden sm:flex flex-shrink-0 ml-4 w-12 justify-center">
+		<div className="w-1 h-full bg-orange-500 my-4"></div>
+		</div>
 	  </motion.div>
 	)
   }
@@ -110,7 +108,7 @@ const StepComponent = ({ step, index, totalSteps, language }) => {
   export default function HowItWorks({ language = "en" }) {
 	const containerRef = useRef(null)
 	const totalSteps = steps[language].length
-	const lineHeight = `calc(100% - ${totalSteps * 140}px)`
+	const lineHeight = `calc(100% - ${totalSteps * 128}px)`
   
 	return (
 	  <section
