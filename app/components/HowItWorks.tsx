@@ -127,8 +127,8 @@ const StepComponent = ({ step, index, totalSteps, language }) => {
 			</h2>
 			<p className="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
 			  {language === "en"
-				? "Discover how our innovative system transforms your warehouse operations"
-				: "Entdecken Sie, wie unser innovatives System Ihre Lageroperationen transformiert"}
+				? "Discover how our smart system optimizes your transshipment warehouse operations"
+				: "Entdecken Sie, wie unser smartes System Ihre Abläufe im Umschlaglager optimiert"}
 			</p>
 		  </motion.div>
 		  <div className="relative max-w-3xl mx-auto">
