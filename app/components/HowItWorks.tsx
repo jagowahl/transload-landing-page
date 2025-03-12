@@ -26,7 +26,7 @@ const steps = {
 	  },
 	  {
 		title: "Real-Time Analysis",
-		description: "Gain in-depth insights into warehouse dynamics with our real-time analytics dashboard. Track movements, monitor performance metrics, and stay informed with live data.",
+		description: "Gain in-depth insights into warehouse dynamics with our real-time analytics dashboard. Analyse KPIs, and stay informed with live data.",
 		icon: LayoutDashboard,
 		image: "./screen_2.png",
 	  },
@@ -51,7 +51,7 @@ const steps = {
 	  },
 	  {
 		title: "Echtzeit-Analyse",
-		description: "Erhalten Sie tiefgehende Einblicke in die Lagerdynamik mit unserem Echtzeit-Analyse-Dashboard. Verfolgen Sie Bewegungen, überwachen Sie Leistungskennzahlen und bleiben Sie mit Live-Daten stets informiert.",
+		description: "Erhalten Sie tiefgehende Einblicke in die Lagerdynamik mit unserem Echtzeit-Analyse-Dashboard. Analysieren Sie KPIs und bleiben Sie mit Live-Daten stets informiert.",
 		icon: LayoutDashboard,
 		image: "./screen_2.png",
 	  },
