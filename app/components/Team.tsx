@@ -8,14 +8,14 @@ const teamMembers = [
 		name: "Nils Börner",
 		role: "Co-Founder",
 		image:
-			"https://media.licdn.com/dms/image/v2/D4D03AQF1zYpvefEcoQ/profile-displayphoto-shrink_800_800/B4DZUYXlS_GcAY-/0/1739870590612?e=1745452800&v=beta&t=ySHh6bRA7r_dIFSywgu_62bgSFn2QMYdLF1FlqWkSAY",
+			"./nils.jpg",
 		linkedin: "https://www.linkedin.com/in/boenils/",
 	},
 	{
 		name: "Jago Wahl-Schwentker",
 		role: "Co-Founder",
 		image:
-			"https://media.licdn.com/dms/image/v2/C4D03AQGGExvMiERskg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1637304606797?e=1741219200&v=beta&t=4trHtVmFqEuhtbp14GUcXN0I7ai4NqRvwga5ZokeueQ",
+			"./jago.jpg",
 		linkedin: "https://www.linkedin.com/in/jagowahl/",
 	},
 ];

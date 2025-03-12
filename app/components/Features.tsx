@@ -22,7 +22,7 @@ const features = {
 		{
 			icon: Forklift,
 			title: "Intelligente Routenführung",
-			description:
+			description: 
 				"Unsere Algorithmen optimieren Ihre Gabelstapler-Routen in Echtzeit",
 		},
 		{
