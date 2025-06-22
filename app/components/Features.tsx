@@ -4,10 +4,6 @@ import {
 	Forklift,
 	BarChart2,
 	Users,
-	Zap,
-	Clock,
-	Target,
-	ArrowRight,
 } from "lucide-react";
 
 const content = {
