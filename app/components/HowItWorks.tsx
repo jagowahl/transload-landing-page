@@ -25,7 +25,7 @@ const steps = {
 			title: "Smart Route Optimization",
 			subtitle: "AI-Powered Efficiency",
 			description:
-				"Advanced algorithms analyze warehouse layout, inventory patterns, and traffic flow to calculate the most efficient forklift routes, dramatically reducing empty runs and fuel consumption.",
+				"Advanced algorithms analyze warehouse layout, inventory patterns, and traffic flow to calculate the most efficient forklift routes, dramatically reducing empty runs and labor costs.",
 			icon: Route,
 			image: "./ani.gif",
 			color: "from-orange-500 to-orange-700",
@@ -34,7 +34,7 @@ const steps = {
 			title: "Intelligent Navigation",
 			subtitle: "Turn-by-Turn Guidance",
 			description:
-				"Provide forklift operators with precise, real-time navigation guidance through an intuitive mobile interface. Clear visual and audio cues ensure optimal path execution.",
+				"Provide forklift operators with precise real-time navigation directly on existing scanners. An intuitive interface ensures optimal paths and clarity across the warehouse.",
 			icon: Forklift,
 			image: "./app_mock_up_eng.svg",
 			color: "from-orange-600 to-orange-800",
@@ -62,7 +62,7 @@ const steps = {
 			title: "Intelligente Routenoptimierung",
 			subtitle: "KI-gesteuerte Effizienz",
 			description:
-				"Fortschrittliche Algorithmen analysieren Lagerlayout, Bestandsmuster und Verkehrsfluss, um die effizientesten Gabelstaplerrouten zu berechnen und Leerfahrten sowie Kraftstoffverbrauch drastisch zu reduzieren.",
+				"Fortschrittliche Algorithmen analysieren Lagerlayout, Bestandsmuster und Verkehrsfluss, um die effizientesten Gabelstaplerrouten zu berechnen und Leerfahrten und damit Personalkosten drastisch zu reduzieren.",
 			icon: Route,
 			image: "./ani.gif",
 			color: "from-orange-500 to-orange-700",
@@ -71,7 +71,7 @@ const steps = {
 			title: "Intelligente Navigation",
 			subtitle: "Schritt-für-Schritt-Führung",
 			description:
-				"Bieten Sie Gabelstaplerfahrern präzise Echtzeit-Navigation durch eine intuitive mobile Oberfläche. Klare visuelle und akustische Hinweise sorgen für optimale Wegausführung.",
+				"Bieten Sie Gabelstaplerfahrern präzise Echtzeit-Navigation direkt auf den vorhandenen Scannern. Ein intuitive Oberfläche sorgen für optimale Wege und Klarheit auf dem Lager.",
 			icon: Forklift,
 			image: "./scanner.png",
 			color: "from-orange-600 to-orange-800",
@@ -236,7 +236,9 @@ const StepComponent = ({
 										: { opacity: 0, scale: 0.8 }
 								}
 								transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
-								className="relative overflow-hidden rounded-xl bg-gray-700/50 p-4"
+								className={`relative overflow-hidden rounded-xl bg-gray-700/50 ${
+									index === 2 ? "" : "p-4"
+								}`}
 							>
 								<div className="relative">
 									<Image
@@ -244,9 +246,15 @@ const StepComponent = ({
 										alt={step.title}
 										width={400}
 										height={300}
-										className={`rounded-lg w-full h-auto transition-all duration-500 ${
+										className={`transition-all duration-500 ${
 											imageLoaded ? "opacity-100" : "opacity-0"
-										} ${index === 1 ? "max-w-[250px] mx-auto" : ""}`}
+										} ${
+											index === 1
+												? "max-w-[250px] mx-auto rounded-lg w-full h-auto"
+												: index === 2
+												? "w-full h-full object-cover rounded-xl"
+												: "rounded-lg w-full h-auto"
+										}`}
 										onLoad={() => setImageLoaded(true)}
 									/>
 									{!imageLoaded && (
