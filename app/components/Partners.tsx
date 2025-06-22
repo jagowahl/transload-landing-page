@@ -14,7 +14,7 @@ export default function Partners({ language }: { language: "en" | "de" }) {
 			<div className="container mx-auto px-4 relative z-10">
 				{/* Section Header */}
 				<div className="text-center mb-16">
-					<div className="inline-flex items-center px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full text-orange-400 text-sm font-medium mb-6">
+					<div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6">
 						<Handshake className="w-4 h-4 mr-2" />
 						Partnerships
 					</div>

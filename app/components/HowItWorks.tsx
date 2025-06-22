@@ -318,7 +318,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 						initial={{ scale: 0 }}
 						animate={isInView ? { scale: 1 } : { scale: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}
-						className="inline-flex items-center gap-2 px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full text-orange-400 text-sm font-medium mb-6"
+						className="inline-flex items-center gap-2 px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6"
 					>
 						<div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
 						{language === "en" ? "Process Overview" : "Prozessübersicht"}
