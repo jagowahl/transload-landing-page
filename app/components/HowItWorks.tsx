@@ -138,7 +138,7 @@ const StepComponent = ({
 				type: "spring",
 				stiffness: 100,
 			}}
-			className={`group relative mb-16 last:mb-0 cursor-pointer`}
+			className={`group relative mb-8 sm:mb-12 lg:mb-16 last:mb-0 cursor-pointer px-4 sm:px-0`}
 			onMouseEnter={() => onHover(index)}
 			onMouseLeave={() => onHover(null)}
 			role="article"
@@ -146,14 +146,14 @@ const StepComponent = ({
 		>
 			{/* Main Content */}
 			<div
-				className={`flex flex-col lg:flex-row items-start gap-8 ${
+				className={`flex flex-col lg:flex-row items-start gap-4 sm:gap-6 lg:gap-8 ${
 					index % 2 === 1 ? "lg:flex-row-reverse" : ""
 				}`}
 			>
 				{/* Step Indicator */}
-				<div className="flex-shrink-0 relative">
+				<div className="flex-shrink-0 relative self-center lg:self-start">
 					<motion.div
-						className={`w-12 h-12 rounded-full flex items-center justify-center text-lg font-bold text-white z-20 relative
+						className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center text-base sm:text-lg font-bold text-white z-20 relative
 				bg-gradient-to-r ${step.color} shadow-lg transform transition-all duration-300
 				${isActive ? "scale-110 shadow-xl" : "group-hover:scale-105"}
 			  `}
@@ -184,9 +184,9 @@ const StepComponent = ({
 				</div>
 
 				{/* Content Card */}
-				<div className="flex-grow max-w-2xl">
+				<div className="flex-grow w-full max-w-2xl">
 					<motion.div
-						className={`bg-gradient-to-br from-gray-800 to-gray-900 p-6 lg:p-8 rounded-2xl shadow-2xl border border-gray-700
+						className={`bg-gradient-to-br from-gray-800 to-gray-900 p-4 sm:p-6 lg:p-8 rounded-2xl shadow-2xl border border-gray-700
 				transform transition-all duration-300 ${
 					isActive
 						? "border-orange-500/50 shadow-orange-500/20"
@@ -196,33 +196,33 @@ const StepComponent = ({
 						whileHover={{ y: -5 }}
 					>
 						{/* Header */}
-						<div className="flex items-start justify-between mb-6">
-							<div className="flex items-center gap-4">
+						<div className="flex items-start justify-between mb-4 sm:mb-6">
+							<div className="flex items-center gap-3 sm:gap-4 flex-1 min-w-0">
 								<motion.div
-									className={`p-3 rounded-xl bg-gradient-to-r ${step.color} shadow-lg`}
+									className={`p-2 sm:p-3 rounded-xl bg-gradient-to-r ${step.color} shadow-lg flex-shrink-0`}
 									whileHover={{ rotate: 5 }}
 								>
-									<step.icon className="w-6 h-6 text-white" />
+									<step.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
 								</motion.div>
-								<div>
-									<h3 className="text-xl lg:text-2xl font-bold text-white mb-1">
+								<div className="min-w-0 flex-1">
+									<h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1 leading-tight">
 										{step.title}
 									</h3>
-									<p className="text-sm text-orange-400 font-medium">
+									<p className="text-xs sm:text-sm text-orange-400 font-medium">
 										{step.subtitle}
 									</p>
 								</div>
 							</div>
 							<motion.div
-								className="text-orange-500 opacity-70"
+								className="text-orange-500 opacity-70 flex-shrink-0 ml-2"
 								whileHover={{ x: 5 }}
 							>
-								<ChevronRight className="w-5 h-5" />
+								<ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
 							</motion.div>
 						</div>
 
 						{/* Description */}
-						<p className="text-gray-300 text-base lg:text-lg leading-relaxed mb-6">
+						<p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
 							{step.description}
 						</p>
 
@@ -297,14 +297,14 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 	return (
 		<section
 			id="how-it-works"
-			className="py-20 lg:py-32 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden relative"
+			className="py-12 sm:py-16 md:py-20 lg:py-32 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden relative"
 			ref={containerRef}
 			aria-labelledby="how-it-works-title"
 		>
-			{/* Background Effects */}
+			{/* Background Effects - Reduced on mobile */}
 			<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-500/5 via-transparent to-transparent" />
-			<div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse" />
-			<div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
+			<div className="absolute top-0 left-1/4 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-orange-500/10 rounded-full blur-2xl sm:blur-3xl animate-pulse" />
+			<div className="absolute bottom-0 right-1/4 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-orange-400/10 rounded-full blur-2xl sm:blur-3xl animate-pulse delay-1000" />
 
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				{/* Header */}
@@ -312,13 +312,13 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 					initial={{ opacity: 0, y: -30 }}
 					animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
 					transition={{ duration: 0.7 }}
-					className="text-center mb-16 lg:mb-24 relative z-20"
+					className="text-center mb-12 sm:mb-16 lg:mb-24 relative z-20"
 				>
 					<motion.div
 						initial={{ scale: 0 }}
 						animate={isInView ? { scale: 1 } : { scale: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}
-						className="inline-flex items-center gap-2 px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6"
+						className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-xs sm:text-sm font-medium mb-4 sm:mb-6"
 					>
 						<div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
 						{language === "en" ? "Process Overview" : "Prozessübersicht"}
@@ -326,12 +326,12 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 
 					<h2
 						id="how-it-works-title"
-						className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"
+						className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent px-4"
 					>
 						{language === "en" ? "How It Works" : "So funktioniert's"}
 					</h2>
 
-					<p className="text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+					<p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
 						{language === "en"
 							? "Discover how our intelligent system transforms your warehouse operations through four seamless steps, delivering unprecedented efficiency and insights."
 							: "Entdecken Sie, wie unser intelligentes System Ihre Lagerabläufe in vier nahtlosen Schritten transformiert und dabei beispiellose Effizienz und Einblicke liefert."}
@@ -343,13 +343,13 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
 					transition={{ duration: 0.5, delay: 0.3 }}
-					className="flex justify-center mb-16"
+					className="flex justify-center mb-12 sm:mb-16 px-4"
 				>
-					<div className="flex items-center gap-4 p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700">
+					<div className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 max-w-full overflow-x-auto">
 						{currentSteps.map((_, index) => (
 							<React.Fragment key={index}>
 								<motion.div
-									className={`w-3 h-3 rounded-full transition-all duration-300 ${
+									className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 flex-shrink-0 ${
 										completedSteps.includes(index)
 											? "bg-orange-500 shadow-lg shadow-orange-500/50"
 											: activeStep === index
@@ -360,7 +360,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 								/>
 								{index < totalSteps - 1 && (
 									<div
-										className={`w-8 h-0.5 transition-all duration-500 ${
+										className={`w-4 sm:w-8 h-0.5 transition-all duration-500 flex-shrink-0 ${
 											completedSteps.includes(index)
 												? "bg-orange-500"
 												: "bg-gray-600"
