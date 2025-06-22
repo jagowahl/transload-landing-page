@@ -47,13 +47,13 @@ const steps = {
 		title: "Gabelstapler-Navigation",
 		description: "Bieten Sie Gabelstaplerfahrern eine präzise, schrittweise Navigation, um ihre Wege im Lager zu optimieren.",
 		icon: Forklift,
-		image: "./app_mock_up_de.svg",
+		image: "./scanner.png",
 	  },
 	  {
 		title: "Echtzeit-Analyse",
 		description: "Erhalten Sie tiefgehende Einblicke in die Lagerdynamik mit unserem Echtzeit-Analyse-Dashboard. Analysieren Sie KPIs und bleiben Sie mit Live-Daten stets informiert.",
 		icon: LayoutDashboard,
-		image: "./screen_2.png",
+		image: "./laptop.png",
 	  },
 	],
   };
@@ -90,8 +90,8 @@ const StepComponent = ({ step, index, totalSteps, language }) => {
 				  alt={step.title}
 				  width={300}
 				  height={200}
-				  className={`rounded-lg w-full h-auto ${index === 1 ? "max-w-[400px]" : ""} ${
-					index === 3 ? "drop-shadow-2xl shadow-2xl" : ""
+				  className={`rounded-lg w-80 h-auto ${index === 1 ? "max-w-[400px]" : ""} ${
+					index === 3 ? "" : ""
 				  }`}
 				/>
 			  </div>
@@ -108,7 +108,7 @@ const StepComponent = ({ step, index, totalSteps, language }) => {
   export default function HowItWorks({ language = "en" }) {
 	const containerRef = useRef(null)
 	const totalSteps = steps[language].length
-	const lineHeight = `calc(100% - ${totalSteps * 128}px)`
+	const lineHeight = `calc(100% - ${totalSteps * 92}px)`
   
 	return (
 	  <section
