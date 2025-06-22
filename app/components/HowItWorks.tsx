@@ -312,7 +312,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 					initial={{ opacity: 0, y: -30 }}
 					animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
 					transition={{ duration: 0.7 }}
-					className="text-center mb-16 lg:mb-24"
+					className="text-center mb-16 lg:mb-24 relative z-20"
 				>
 					<motion.div
 						initial={{ scale: 0 }}
