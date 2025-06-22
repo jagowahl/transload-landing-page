@@ -1,103 +1,101 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import {
-	Card,
-	CardContent,
-	CardDescription,
-	CardFooter,
-	CardHeader,
-	CardTitle,
-} from "@/components/ui/card";
-import { Mail, Calendar, Newspaper } from "lucide-react";
+import { Mail, Calendar, Linkedin, Zap } from "lucide-react";
 
 const content = {
 	en: {
-		title: "Ready to reduce your empty runs in the transshipment warehouse?",
-		header_title: "Connect With Us",
-		description: "Transform your operations with our smart control systems.",
-		cta: "Sign up for Newsletter",
-		newsletterUrl: "https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb",
-		meeting: "Schedule a Zoom Meeting",
+		title: "Ready to Upgrade Your Transshipment Warehouse?",
+		description: "Get in touch with us.",
+		meeting: "Schedule a Meeting",
 		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
 		email: "Send us an Email",
 		emailUrl: "mailto:contact@trans-load.de",
+		linkedin: "Visit us on LinkedIn",
+		linkedinUrl: "https://www.linkedin.com/company/trans-load",
 		footer: "We look forward to hearing from you!",
 	},
 	de: {
-		title: "Bereit, Ihre Leerfahrten im Umschlaglager zu reduzieren?",
-		header_title: "Kontaktieren Sie uns",
-		description:
-			"Transformieren Sie Ihre Abläufe mit unseren smarten Steuerungssystemen.",
-		cta: "Für Newsletter anmelden",
-		newsletterUrl: "https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb",
-		meeting: "Planen Sie ein Zoom-Meeting",
+		title: "Bereit für ein Umschlaglager-Upgrade?",
+		description: "Nehmen Sie Kontakt mit uns auf.",
+		meeting: "Meeting vereinbaren",
 		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
 		email: "Senden Sie uns eine E-Mail",
 		emailUrl: "mailto:contact@trans-load.de",
+		linkedin: "Besuchen Sie uns auf LinkedIn",
+		linkedinUrl: "https://www.linkedin.com/company/trans-load",
 		footer: "Wir freuen uns, von Ihnen zu hören!",
 	},
 };
 
-interface ReusableButtonProps {
-	href: string;
-	cta: string;
-	icon: any;
-}
-
-const ReusableButton = ({ href, cta, icon }: ReusableButtonProps) => {
-	return (
-		<Button
-			asChild
-			variant="default"
-			className="w-full h-auto flex-row justify-start bg-orange-500 hover:bg-orange-600 hover:shadow-xl text-white"
-		>
-			<Link href={href}>
-				{icon}
-				<div className="w-full whitespace-normal text-xl">{cta}</div>
-			</Link>
-		</Button>
-	);
-};
-
-export default function GetInTouch({ language }) {
+export default function GetInTouch({ language }: { language: "en" | "de" }) {
 	const {
 		title,
-		header_title,
 		description,
-		cta,
-		newsletterUrl,
 		meeting,
 		meetingUrl,
 		email,
 		emailUrl,
+		linkedin,
+		linkedinUrl,
 		footer,
 	} = content[language];
 
 	return (
-		<section className="py-20 bg-gradient-to-r from-orange-800 to-gray-800">
-			<div className="container mx-auto px-4 text-center">
-				<h2 className="text-3xl font-bold mb-4 text-white">{title}</h2>
-				<p className="text-xl mb-8 text-gray-200">{description}</p>
-				<Card className="border-0 w-full max-w-md mx-auto bg-white/10 text-white text-left">
-					<CardHeader>
-						<CardTitle className="text-xl">{header_title}</CardTitle>
-					</CardHeader>
-					<CardContent>
-						<div className="space-y-4">
-							<ReusableButton
-								href={meetingUrl}
-								cta={meeting}
-								icon={<Calendar className="mr-2 h-5 w-5" />}
-							/>
-							<ReusableButton
-								href={emailUrl}
-								cta={email}
-								icon={<Mail className="mr-2 h-5 w-5" />}
-							/>
-						</div>
-					</CardContent>
-					<CardFooter>{footer}</CardFooter>
-				</Card>
+		<section
+			id="contact"
+			className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden"
+		>
+			{/* Background decoration */}
+			<div className="absolute inset-0">
+				<div className="absolute top-20 left-10 w-32 h-32 bg-orange-500/5 rounded-full blur-xl"></div>
+				<div className="absolute bottom-20 right-10 w-40 h-40 bg-orange-500/5 rounded-full blur-xl"></div>
+			</div>
+
+			<div className="container mx-auto px-4 text-center relative z-10">
+				{/* Header with icon */}
+				<div className="flex items-center justify-center mb-6">
+					<div className="p-3 bg-orange-500/10 rounded-full border border-orange-500/20">
+						<Zap className="w-8 h-8 text-orange-500" />
+					</div>
+				</div>
+
+				<h2 className="text-4xl md:text-5xl font-bold mb-6 text-white leading-tight">
+					{title}
+				</h2>
+				<p className="text-xl mb-12 text-gray-300 max-w-2xl mx-auto">
+					{description}
+				</p>
+
+				{/* Simplified contact options */}
+				<div className="max-w-md mx-auto space-y-6">
+					<div className="flex flex-col gap-4">
+						{/* Schedule Meeting */}
+						<Link href={meetingUrl} className="group">
+							<div className="flex items-center justify-center p-4 bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors duration-200">
+								<Calendar className="w-5 h-5 mr-3 text-white" />
+								<span className="text-white font-medium">{meeting}</span>
+							</div>
+						</Link>
+
+						{/* Email */}
+						<Link href={emailUrl} className="group">
+							<div className="flex items-center justify-center p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors duration-200">
+								<Mail className="w-5 h-5 mr-3 text-white" />
+								<span className="text-white font-medium">{email}</span>
+							</div>
+						</Link>
+
+						{/* LinkedIn */}
+						<Link href={linkedinUrl} className="group">
+							<div className="flex items-center justify-center p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors duration-200">
+								<Linkedin className="w-5 h-5 mr-3 text-white" />
+								<span className="text-white font-medium">{linkedin}</span>
+							</div>
+						</Link>
+					</div>
+
+					<p className="text-gray-400 text-sm mt-8">{footer}</p>
+				</div>
 			</div>
 		</section>
 	);
