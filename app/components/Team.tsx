@@ -41,7 +41,7 @@ export default function Team({ language }: { language: "en" | "de" }) {
 	const { title, joinUs, motivation, joinTeam } = content[language];
 
 	return (
-		<section className="py-20 bg-gray-900 relative overflow-hidden">
+		<section id="team" className="py-20 bg-gray-900 relative overflow-hidden">
 			{/* Background decoration */}
 			<div className="absolute inset-0">
 				<div className="absolute top-10 right-20 w-24 h-24 bg-orange-500/5 rounded-full blur-xl"></div>

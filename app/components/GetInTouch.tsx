@@ -16,8 +16,7 @@ const content = {
 	},
 	de: {
 		title: "Bereit für ein Umschlaglager-Upgrade?",
-		description:
-			"Nehmen Sie Kontakt mit uns auf.",
+		description: "Nehmen Sie Kontakt mit uns auf.",
 		meeting: "Meeting vereinbaren",
 		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
 		email: "Senden Sie uns eine E-Mail",
@@ -42,7 +41,10 @@ export default function GetInTouch({ language }: { language: "en" | "de" }) {
 	} = content[language];
 
 	return (
-		<section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
+		<section
+			id="contact"
+			className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden"
+		>
 			{/* Background decoration */}
 			<div className="absolute inset-0">
 				<div className="absolute top-20 left-10 w-32 h-32 bg-orange-500/5 rounded-full blur-xl"></div>

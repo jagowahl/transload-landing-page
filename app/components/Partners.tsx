@@ -19,15 +19,8 @@ export default function Partners({ language }: { language: "en" | "de" }) {
 						Partnerships
 					</div>
 					<h2 className="text-4xl font-bold text-white mb-4">
-						{language === "en"
-							? "Our Trusted Partners"
-							: "Unsere vertrauenswürdigen Partner"}
+						{language === "en" ? "Our Partners" : "Unsere Partner"}
 					</h2>
-					<p className="text-lg text-gray-300 max-w-2xl mx-auto">
-						{language === "en"
-							? "We collaborate with industry leaders to deliver exceptional solutions and drive innovation in warehouse technology."
-							: "Wir arbeiten mit Branchenführern zusammen, um außergewöhnliche Lösungen zu liefern und Innovationen in der Lagertechnologie voranzutreiben."}
-					</p>
 				</div>
 
 				{/* Partners Grid */}

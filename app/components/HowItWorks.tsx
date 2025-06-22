@@ -288,6 +288,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 
 	return (
 		<section
+			id="how-it-works"
 			className="py-20 lg:py-32 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white overflow-hidden relative"
 			ref={containerRef}
 			aria-labelledby="how-it-works-title"
@@ -317,7 +318,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 
 					<h2
 						id="how-it-works-title"
-						className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-orange-100 to-orange-200 bg-clip-text text-transparent"
+						className="text-4xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"
 					>
 						{language === "en" ? "How It Works" : "So funktioniert's"}
 					</h2>
