@@ -51,7 +51,7 @@ export default function Team({ language }: { language: "en" | "de" }) {
 			<div className="container mx-auto px-4 relative z-10">
 				{/* Section Header */}
 				<div className="text-center mb-16">
-					<div className="inline-flex items-center px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full text-orange-400 text-sm font-medium mb-6">
+					<div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6">
 						<Users className="w-4 h-4 mr-2" />
 						Meet the Team
 					</div>
@@ -120,7 +120,7 @@ export default function Team({ language }: { language: "en" | "de" }) {
 						<div className="absolute bottom-0 left-0 w-24 h-24 bg-orange-500/5 rounded-full blur-xl"></div>
 
 						<div className="relative z-10">
-							<div className="inline-flex items-center px-4 py-2 bg-orange-500/10 border border-orange-500/20 rounded-full text-orange-400 text-sm font-medium mb-6">
+							<div className="inline-flex items-center gap-2 px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6">
 								<Users className="w-4 h-4 mr-2" />
 								Join Our Mission
 							</div>
@@ -131,20 +131,12 @@ export default function Team({ language }: { language: "en" | "de" }) {
 							<p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
 								{motivation}
 							</p>
-
-							<Button
-								asChild
-								className="group bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-6 h-auto font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-							>
-								<Link
-									href="mailto:contact@trans-load.de"
-									className="flex items-center justify-center"
-								>
-									<Mail className="mr-3 h-5 w-5" />
-									<span>{joinTeam}</span>
-									<ArrowRight className="ml-3 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-								</Link>
-							</Button>
+							<Link href="mailto:contact@trans-load.de" className="group">
+								<div className="flex items-center justify-center p-4 bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors duration-200 max-w-md mx-auto">
+									<Mail className="w-5 h-5 mr-3 text-white" />
+									<span className="text-white font-medium">{joinTeam}</span>
+								</div>
+							</Link>
 						</div>
 					</div>
 				</div>

@@ -54,7 +54,7 @@ export default function GetInTouch({ language }: { language: "en" | "de" }) {
 			<div className="container mx-auto px-4 text-center relative z-10">
 				{/* Header with icon */}
 				<div className="flex items-center justify-center mb-6">
-					<div className="p-3 bg-orange-500/10 rounded-full border border-orange-500/20">
+					<div className="inline-flex items-center px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6">
 						<Zap className="w-8 h-8 text-orange-500" />
 					</div>
 				</div>
