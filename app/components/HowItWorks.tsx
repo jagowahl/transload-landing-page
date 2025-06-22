@@ -25,7 +25,7 @@ const steps = {
 			title: "Smart Route Optimization",
 			subtitle: "AI-Powered Efficiency",
 			description:
-				"Advanced algorithms analyze warehouse layout, inventory patterns, and traffic flow to calculate the most efficient forklift routes, dramatically reducing empty runs and labor costs.",
+				"Advanced algorithms analyze warehouse layout, inventory patterns, and traffic flow to calculate the most efficient forklift routes, dramatically reducing empty runs.",
 			icon: Route,
 			image: "./ani.gif",
 			color: "from-orange-500 to-orange-700",
@@ -62,7 +62,7 @@ const steps = {
 			title: "Intelligente Routenoptimierung",
 			subtitle: "KI-gesteuerte Effizienz",
 			description:
-				"Fortschrittliche Algorithmen analysieren Lagerlayout, Bestandsmuster und Verkehrsfluss, um die effizientesten Gabelstaplerrouten zu berechnen und Leerfahrten und damit Personalkosten drastisch zu reduzieren.",
+				"Fortschrittliche Algorithmen analysieren Lagerlayout, Bestandsmuster und Verkehrsfluss, um die effizientesten Gabelstaplerrouten zu berechnen und Leerfahrten zu reduzieren.",
 			icon: Route,
 			image: "./ani.gif",
 			color: "from-orange-500 to-orange-700",
