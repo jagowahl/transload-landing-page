@@ -90,7 +90,7 @@ const StepComponent = ({ step, index, totalSteps, language }) => {
 				  alt={step.title}
 				  width={300}
 				  height={200}
-				  className={`rounded-lg w-80 h-auto ${index === 1 ? "max-w-[400px]" : ""} ${
+				  className={`rounded-lg w-80 h-auto ${index === 1 ? "max-w-[200px]" : ""} ${
 					index === 3 ? "" : ""
 				  }`}
 				/>

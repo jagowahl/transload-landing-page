@@ -2,7 +2,7 @@ import "@/app/_styles/globals.css";
 
 export const metadata = {
 	title: "transload - Staplerleitsystem für Umschlaglager",
-	description: "Leefahrten reduzieren - Kosten sparen",
+	description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
 	keywords: [
 		// Deutsch
 		"Staplerleitsystem", "Umschlaglager", "Leerfahrten", "Kosten sparen", "Intralogistik", "Logistiksoftware",
