@@ -90,7 +90,7 @@ export default function Team({ language }: { language: "en" | "de" }) {
 						<div className="text-lg text-gray-300 mb-8">{motivation}</div>
 						<Button
 							asChild
-							className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl hover:scale-105"
+							className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl"
 						>
 							<Link
 								href="mailto:contact@trans-load.de"

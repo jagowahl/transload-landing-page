@@ -48,8 +48,8 @@ const ReusableButton = ({ href, cta, icon }: ReusableButtonProps) => {
 	return (
 		<Button
 			asChild
-			variant="outline"
-			className="w-full h-auto flex-row justify-start bg-orange-500 hover:bg-orange-600 hover:shadow-xl hover:scale-105"
+			variant="default"
+			className="w-full h-auto flex-row justify-start bg-orange-500 hover:bg-orange-600 hover:shadow-xl text-white"
 		>
 			<Link href={href}>
 				{icon}
@@ -78,7 +78,7 @@ export default function GetInTouch({ language }) {
 			<div className="container mx-auto px-4 text-center">
 				<h2 className="text-3xl font-bold mb-4 text-white">{title}</h2>
 				<p className="text-xl mb-8 text-gray-200">{description}</p>
-				<Card className="w-full max-w-md mx-auto bg-white/10 text-white text-left">
+				<Card className="border-0 w-full max-w-md mx-auto bg-white/10 text-white text-left">
 				<CardHeader>
 					<CardTitle className="text-xl">{header_title}</CardTitle>
 					</CardHeader>
