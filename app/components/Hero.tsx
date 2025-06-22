@@ -35,7 +35,7 @@ export default function Hero({ language }) {
 					</p>
 					<Button
 						asChild
-						className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl hover:scale-105">
+						className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl">
 						<Link href="https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb">
 							<Newspaper className="mr-2 h-5 w-5" />
 							<div className="whitespace-normal text-xl">{language === "de" ? "Für Newsletter anmelden" : "Sign up for Newsletter"}</div>

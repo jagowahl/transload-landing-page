@@ -7,16 +7,16 @@ const teamMembers = [
 	{
 		name: "Nils Börner",
 		role: "Co-Founder",
-		image:
-			"./nils.jpg",
+		image: "./nils.jpg",
 		linkedin: "https://www.linkedin.com/in/boenils/",
+		email: "mailto:nils.boerner@trans-load.de",
 	},
 	{
 		name: "Jago Wahl-Schwentker",
 		role: "Co-Founder",
-		image:
-			"./jago.jpg",
+		image: "./jago.jpg",
 		linkedin: "https://www.linkedin.com/in/jagowahl/",
+		email: "mailto:jago.wahl-schwentker@trans-load.de",
 	},
 ];
 
@@ -72,6 +72,15 @@ export default function Team({ language }: { language: "en" | "de" }) {
 								<Linkedin className="w-5 h-5 mr-2" />
 								LinkedIn
 							</a>
+							<a
+								href={member.email}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="inline-flex items-center text-orange-500 hover:text-orange-600 ml-4"
+							>
+								<Mail className="w-5 h-5 mr-2" />
+								Email
+							</a>
 						</div>
 					))}
 				</div>
@@ -81,7 +90,7 @@ export default function Team({ language }: { language: "en" | "de" }) {
 						<div className="text-lg text-gray-300 mb-8">{motivation}</div>
 						<Button
 							asChild
-							className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl hover:scale-105"
+							className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl"
 						>
 							<Link
 								href="mailto:contact@trans-load.de"
