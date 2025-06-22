@@ -274,7 +274,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 	const containerRef = useRef(null);
 	const [activeStep, setActiveStep] = useState<number | null>(null);
 	const [completedSteps, setCompletedSteps] = useState<number[]>([]);
-	const isInView = useInView(containerRef, { once: true, margin: "-200px" });
+	const isInView = useInView(containerRef, { once: true, margin: "-100px" });
 
 	const currentSteps = steps[language] || steps.en;
 	const totalSteps = currentSteps.length;
