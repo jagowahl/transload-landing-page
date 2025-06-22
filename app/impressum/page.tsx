@@ -39,7 +39,7 @@ export default function ImpressumPage() {
 						B&ouml;rner
 					</a>
 
-					<p>{language === "en" ? "Quelle:" : "Source:"}</p>
+					<p>{language === "en" ? "Source:" : "Quelle:"}</p>
 					<a href="https://www.e-recht24.de/impressum-generator.html">
 						https://www.e-recht24.de/impressum-generator.html
 					</a>
