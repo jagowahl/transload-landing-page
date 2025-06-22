@@ -8,7 +8,7 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card";
-import { Mail, Calendar, Newspaper } from "lucide-react";
+import { Mail, Calendar, Newspaper, Linkedin } from "lucide-react";
 
 const content = {
 	en: {
@@ -17,10 +17,12 @@ const content = {
 		description: "Transform your operations with our smart control systems.",
 		cta: "Sign up for Newsletter",
 		newsletterUrl: "https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb",
-		meeting: "Schedule a Zoom Meeting",
+		meeting: "Schedule a Meeting",
 		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
 		email: "Send us an Email",
 		emailUrl: "mailto:contact@trans-load.de",
+		linkedin: "Visit us on LinkedIn",
+		linkedinUrl: "https://www.linkedin.com/company/trans-load",
 		footer: "We look forward to hearing from you!",
 	},
 	de: {
@@ -30,10 +32,12 @@ const content = {
 			"Transformieren Sie Ihre Abläufe mit unseren smarten Steuerungssystemen.",
 		cta: "Für Newsletter anmelden",
 		newsletterUrl: "https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb",
-		meeting: "Planen Sie ein Zoom-Meeting",
+		meeting: "Meeting vereinbaren",
 		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
 		email: "Senden Sie uns eine E-Mail",
 		emailUrl: "mailto:contact@trans-load.de",
+		linkedin: "Besuchen Sie uns auf LinkedIn",
+		linkedinUrl: "https://www.linkedin.com/company/trans-load",
 		footer: "Wir freuen uns, von Ihnen zu hören!",
 	},
 };
@@ -59,7 +63,7 @@ const ReusableButton = ({ href, cta, icon }: ReusableButtonProps) => {
 	);
 };
 
-export default function GetInTouch({ language }) {
+export default function GetInTouch({ language }: { language: 'en' | 'de' }) {
 	const {
 		title,
 		header_title,
@@ -70,6 +74,8 @@ export default function GetInTouch({ language }) {
 		meetingUrl,
 		email,
 		emailUrl,
+		linkedin,
+		linkedinUrl,
 		footer,
 	} = content[language];
 
@@ -93,6 +99,11 @@ export default function GetInTouch({ language }) {
 								href={emailUrl}
 								cta={email}
 								icon={<Mail className="mr-2 h-5 w-5" />}
+							/>
+							<ReusableButton
+								href={linkedinUrl}
+								cta={linkedin}
+								icon={<Linkedin className="mr-2 h-5 w-5" />}
 							/>
 						</div>
 					</CardContent>

@@ -2,18 +2,16 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Mail, Calendar, Newspaper } from "lucide-react";
 
-
 export default function Hero({ language }) {
 	const content = {
 		en: {
 			title: "Forklift Control System for Transshipment Warehouses",
-			description:
-				"Fewer Empty Runs. Lower Costs. Higher Productivity.",
+			description: "Fewer Empty Runs. Lower Costs. Higher Productivity.",
 		},
 		de: {
 			title: "Staplerleitsystem für Umschlaglager",
 			description:
-			"Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität."
+				"Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
 		},
 	};
 
@@ -27,20 +25,12 @@ export default function Hero({ language }) {
 			</div>
 			<div className="container mx-auto px-4 relative z-10">
 				<div className="text-center">
-					<h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight text-white">
+					<h1 className="text-3xl md:text-5xl font-extrabold mb-6 leading-tight text-orange-500">
 						{title}
 					</h1>
 					<p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white">
 						{description}
 					</p>
-					<Button
-						asChild
-						className="bg-orange-500 text-xl whitespace-normal h-auto text-white hover:bg-orange-600 shadow-lg hover:shadow-xl">
-						<Link href="https://share.hsforms.com/1jvcgnOE4RLiOJSGOdSJM6gt0skb">
-							<Newspaper className="mr-2 h-5 w-5" />
-							<div className="whitespace-normal text-xl">{language === "de" ? "Für Newsletter anmelden" : "Sign up for Newsletter"}</div>
-						</Link>
-					</Button>
 				</div>
 			</div>
 		</section>
