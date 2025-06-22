@@ -1,9 +1,19 @@
 import "@/app/_styles/globals.css";
 
 export const metadata = {
-	title: "transload - Fewer Empty Runs in the Transshipment Warehouse",
-	description: "Supercharge Your Transshipment Warehouse with Our Smart Forklift Navigation System",
-	keywords: ["Intralogistics", "Transshipment Warehouse", "Forklift", "Pallet Truck", "Route Optimization", "Cost Savings"],
+	title: "transload - Staplerleitsystem für Umschlaglager",
+	description: "Leefahrten reduzieren - Kosten sparen",
+	keywords: [
+		// Deutsch
+		"Staplerleitsystem", "Umschlaglager", "Leerfahrten", "Kosten sparen", "Intralogistik", "Logistiksoftware",
+		"Lagerverwaltungssystem", "Flurfördermittel", "Disposition Stapler", "Effizienzsteigerung Lager",
+		"Automatisierung Umschlaglager", "KI in der Intralogistik", "Logistik Digitalisierung", "Start-Up", "Startup",
+	  
+		// Englisch
+		"Intralogistics", "Transshipment Warehouse", "Forklift", "Pallet Truck", "Route Optimization", "Cost Savings",
+		"Forklift Guidance System", "Warehouse Control System", "Fleet Management", "Material Flow Optimization",
+		"Cross Docking Software", "Smart Warehouse", "AI Logistics"
+	  ],
 	openGraph: {
 		images: './logo_dark.png',
 	},

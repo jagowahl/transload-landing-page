@@ -11,9 +11,9 @@ export default function Hero({ language }) {
 				"Supercharge Your Transshipment Warehouse with Our Smart Forklift Navigation System",
 		},
 		de: {
-			title: "Weniger Leerfahrten im Umschlaglager",
+			title: "Staplerleitsystem für Umschlaglager",
 			description:
-				"Optimieren Sie Ihr Umschlaglager mit unserem intelligenten Gabelstapler-Navigationssystem",
+			"Leerfahrten reduzieren - Kosten sparen"
 		},
 	};
 
@@ -22,8 +22,8 @@ export default function Hero({ language }) {
 	return (
 		<section className="relative py-20 overflow-hidden">
 			<div className="absolute inset-0 z-0">
-				<div className="absolute inset-0 bg-gradient-to-br from-orange-800 to-neutral-700 opacity-70"></div>
-				<div className="absolute inset-0 bg-[url('/bg_image.png')] bg-cover bg-center mix-blend-overlay"></div>
+				<div className="absolute inset-0 bg-gray-900 opacity-60"></div>
+				<div className="absolute inset-0 bg-[url('/bg_image.png')] bg-cover bg-center mix-blend-overlay opacity-100"></div>
 			</div>
 			<div className="container mx-auto px-4 relative z-10">
 				<div className="text-center">
