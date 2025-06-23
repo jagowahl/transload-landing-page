@@ -14,13 +14,14 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 	const toggleLanguage = () => setLanguage(language === "en" ? "de" : "en");
 
 	const navigationItems = [
-		{ href: "#features", label: language === "en" ? "Features" : "Features" },
+		{ href: "#features", label: language === "en" ? "Key Features" : "Key-Features" },
 		{
 			href: "#how-it-works",
 			label: language === "en" ? "How it Works" : "So funktioniert's",
 		},
-		{ href: "#team", label: language === "en" ? "Team" : "Team" },
 		{ href: "#contact", label: language === "en" ? "Contact" : "Kontakt" },
+		{ href: "#team", label: language === "en" ? "Team" : "Team" },
+		{ href: "#partners", label: language === "en" ? "Partners" : "Partner" },
 	];
 
 	return (

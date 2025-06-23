@@ -4,7 +4,7 @@ import { Handshake, ExternalLink } from "lucide-react";
 
 export default function Partners({ language }: { language: "en" | "de" }) {
 	return (
-		<section className="py-20 bg-gray-800 relative overflow-hidden">
+		<section id="partners" className="py-20 bg-gray-800 relative overflow-hidden">
 			{/* Background decoration */}
 			<div className="absolute inset-0">
 				<div className="absolute top-16 left-20 w-28 h-28 bg-orange-500/5 rounded-full blur-xl"></div>
@@ -59,7 +59,7 @@ export default function Partners({ language }: { language: "en" | "de" }) {
 								<div className="absolute inset-0 bg-orange-500/10 rounded-lg opacity-0 transition-opacity duration-300"></div>
 								<div className="relative bg-white rounded-lg p-6 mx-auto w-fit">
 									<Image
-										src="./tum_logo.svg"
+										src="./tum_entrepreneurial_masterclass_logo.jpg"
 										alt="TUM Entrepreneurial Masterclass"
 										width={120}
 										height={120}

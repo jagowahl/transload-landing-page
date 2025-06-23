@@ -26,10 +26,10 @@ const features = {
 		},
 		{
 			icon: Users,
-			title: "Human-Centric Design",
+			title: "User-friendly Design",
 			description:
 				"Intuitive interface designed with drivers in mind, boosting productivity and work satisfaction",
-			highlight: "Driver-friendly",
+			highlight: "Excellent UX",
 		},
 		{
 			icon: BarChart2,
@@ -49,16 +49,16 @@ const features = {
 		},
 		{
 			icon: Users,
-			title: "Menschenzentriertes Design",
+			title: "Benutzerfreundliches Design",
 			description:
 				"Intuitive Benutzeroberfläche für Fahrer entwickelt, steigert Produktivität und Arbeitszufriedenheit",
-			highlight: "Fahrerfreundlich",
+			highlight: "Überzeugende User Experience",
 		},
 		{
 			icon: BarChart2,
 			title: "Leistungsanalyse",
 			description:
-				"Umfassende Echtzeit-Einblicke und prädiktive Analysen für kontinuierliche Betriebsverbesserung",
+				"Umfassende Echtzeit-Einblicke und vorausschauende Analysen für kontinuierliche Betriebsverbesserung",
 			highlight: "Live-Daten",
 		},
 	],

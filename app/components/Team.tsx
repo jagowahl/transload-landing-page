@@ -63,7 +63,7 @@ export default function Team({ language }: { language: "en" | "de" }) {
 					{teamMembers.map((member, index) => (
 						<div
 							key={index}
-							className="group bg-gray-800 border border-gray-700 hover:border-orange-500/50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center max-w-sm w-full"
+							className="group bg-gray-800 border border-gray-700  p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 text-center max-w-sm w-full"
 						>
 							{/* Profile Image with hover effect */}
 							<div className="relative mb-6">
@@ -73,12 +73,12 @@ export default function Team({ language }: { language: "en" | "de" }) {
 									alt={member.name}
 									width={160}
 									height={160}
-									className="relative rounded-full mx-auto border-4 border-gray-700 group-hover:border-orange-500 transition-colors duration-300"
+									className="relative rounded-full mx-auto border-4 border-gray-700  transition-colors duration-300"
 								/>
 							</div>
 
 							{/* Member Info */}
-							<h3 className="text-2xl font-bold mb-2 text-white group-hover:text-orange-400 transition-colors">
+							<h3 className="text-2xl font-bold mb-2 text-white transition-colors">
 								{member.name}
 							</h3>
 							<div className="inline-block px-3 py-1 bg-orange-500/10 border border-orange-500/20 rounded-full text-orange-400 text-sm font-medium mb-6">
