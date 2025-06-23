@@ -59,7 +59,7 @@ export default function Partners({ language }: { language: "en" | "de" }) {
 								<div className="absolute inset-0 bg-orange-500/10 rounded-lg opacity-0 transition-opacity duration-300"></div>
 								<div className="relative bg-white rounded-lg p-6 mx-auto w-fit">
 									<Image
-										src="./tum_logo.svg"
+										src="./tum_entrepreneurial_masterclass_logo.jpg"
 										alt="TUM Entrepreneurial Masterclass"
 										width={120}
 										height={120}

@@ -58,7 +58,7 @@ const features = {
 			icon: BarChart2,
 			title: "Leistungsanalyse",
 			description:
-				"Umfassende Echtzeit-Einblicke und prädiktive Analysen für kontinuierliche Betriebsverbesserung",
+				"Umfassende Echtzeit-Einblicke und vorausschauende Analysen für kontinuierliche Betriebsverbesserung",
 			highlight: "Live-Daten",
 		},
 	],

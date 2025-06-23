@@ -217,7 +217,6 @@ const StepComponent = ({
 								className="text-orange-500 opacity-70 flex-shrink-0 ml-2"
 								whileHover={{ x: 5 }}
 							>
-								<ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
 							</motion.div>
 						</div>
 
@@ -333,8 +332,8 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 
 					<p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
 						{language === "en"
-							? "Discover how our intelligent system transforms your warehouse operations through four seamless steps, delivering unprecedented efficiency and insights."
-							: "Entdecken Sie, wie unser intelligentes System Ihre Lagerabläufe in vier nahtlosen Schritten transformiert und dabei beispiellose Effizienz und Einblicke liefert."}
+							? "Discover how our intelligent system streamlines your warehouse operations in four simple steps – enhancing efficiency and transparency."
+							: "Erleben Sie, wie unser intelligentes System Ihre Lagerprozesse in vier einfachen Schritten optimiert – für mehr Effizienz und bessere Transparenz."}
 					</p>
 				</motion.div>
 
