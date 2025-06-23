@@ -216,8 +216,7 @@ const StepComponent = ({
 							<motion.div
 								className="text-orange-500 opacity-70 flex-shrink-0 ml-2"
 								whileHover={{ x: 5 }}
-							>
-							</motion.div>
+							></motion.div>
 						</div>
 
 						{/* Description */}
@@ -300,10 +299,10 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 			ref={containerRef}
 			aria-labelledby="how-it-works-title"
 		>
-			{/* Background Effects - Reduced on mobile */}
+			{/* Background Effects */}
 			<div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-orange-500/5 via-transparent to-transparent" />
-			<div className="absolute top-0 left-1/4 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-orange-500/10 rounded-full blur-2xl sm:blur-3xl animate-pulse" />
-			<div className="absolute bottom-0 right-1/4 w-48 h-48 sm:w-72 sm:h-72 lg:w-96 lg:h-96 bg-orange-400/10 rounded-full blur-2xl sm:blur-3xl animate-pulse delay-1000" />
+			<div className="absolute top-0 left-1/4 w-96 h-96 bg-orange-500/10 rounded-full blur-3xl animate-pulse" />
+			<div className="absolute bottom-0 right-1/4 w-96 h-96 bg-orange-400/10 rounded-full blur-3xl animate-pulse delay-1000" />
 
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				{/* Header */}
@@ -311,13 +310,13 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 					initial={{ opacity: 0, y: -30 }}
 					animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: -30 }}
 					transition={{ duration: 0.7 }}
-					className="text-center mb-12 sm:mb-16 lg:mb-24 relative z-20"
+					className="text-center mb-16 lg:mb-24 relative z-20"
 				>
 					<motion.div
 						initial={{ scale: 0 }}
 						animate={isInView ? { scale: 1 } : { scale: 0 }}
 						transition={{ duration: 0.5, delay: 0.2 }}
-						className="inline-flex items-center gap-2 px-3 py-2 sm:px-4 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-xs sm:text-sm font-medium mb-4 sm:mb-6"
+						className="inline-flex items-center gap-2 px-4 py-2 bg-orange-400/10 border border-orange-500/20 rounded-full text-orange-500 text-sm font-medium mb-6"
 					>
 						<div className="w-2 h-2 bg-orange-500 rounded-full animate-pulse" />
 						{language === "en" ? "Process Overview" : "Prozessübersicht"}
@@ -325,12 +324,12 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 
 					<h2
 						id="how-it-works-title"
-						className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent px-4"
+						className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent"
 					>
 						{language === "en" ? "How It Works" : "So funktioniert's"}
 					</h2>
 
-					<p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
+					<p className="text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
 						{language === "en"
 							? "Discover how our intelligent system streamlines your warehouse operations in four simple steps – enhancing efficiency and transparency."
 							: "Erleben Sie, wie unser intelligentes System Ihre Lagerprozesse in vier einfachen Schritten optimiert – für mehr Effizienz und bessere Transparenz."}
@@ -342,13 +341,13 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 					initial={{ opacity: 0, y: 20 }}
 					animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
 					transition={{ duration: 0.5, delay: 0.3 }}
-					className="flex justify-center mb-12 sm:mb-16 px-4"
+					className="flex justify-center mb-16"
 				>
-					<div className="flex items-center gap-2 sm:gap-4 p-3 sm:p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700 max-w-full overflow-x-auto">
+					<div className="flex items-center gap-4 p-4 bg-gray-800/50 backdrop-blur-sm rounded-2xl border border-gray-700">
 						{currentSteps.map((_, index) => (
 							<React.Fragment key={index}>
 								<motion.div
-									className={`w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full transition-all duration-300 flex-shrink-0 ${
+									className={`w-3 h-3 rounded-full transition-all duration-300 ${
 										completedSteps.includes(index)
 											? "bg-orange-500 shadow-lg shadow-orange-500/50"
 											: activeStep === index
@@ -359,7 +358,7 @@ export default function HowItWorks({ language = "en" }: HowItWorksProps) {
 								/>
 								{index < totalSteps - 1 && (
 									<div
-										className={`w-4 sm:w-8 h-0.5 transition-all duration-500 flex-shrink-0 ${
+										className={`w-8 h-0.5 transition-all duration-500 ${
 											completedSteps.includes(index)
 												? "bg-orange-500"
 												: "bg-gray-600"
