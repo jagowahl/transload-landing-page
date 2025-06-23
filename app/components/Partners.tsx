@@ -4,7 +4,7 @@ import { Handshake, ExternalLink } from "lucide-react";
 
 export default function Partners({ language }: { language: "en" | "de" }) {
 	return (
-		<section className="py-20 bg-gray-800 relative overflow-hidden">
+		<section id="partners" className="py-20 bg-gray-800 relative overflow-hidden">
 			{/* Background decoration */}
 			<div className="absolute inset-0">
 				<div className="absolute top-16 left-20 w-28 h-28 bg-orange-500/5 rounded-full blur-xl"></div>

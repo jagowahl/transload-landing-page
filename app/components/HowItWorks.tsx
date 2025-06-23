@@ -34,9 +34,9 @@ const steps = {
 			title: "Intelligent Navigation",
 			subtitle: "Turn-by-Turn Guidance",
 			description:
-				"Provide forklift operators with precise real-time navigation directly on existing scanners. An intuitive interface ensures optimal paths and clarity across the warehouse.",
+				"Provide forklift operators with optimized transport orders directly on existing scanners. An intuitive user interface ensures optimal paths and clarity across the warehouse.",
 			icon: Forklift,
-			image: "./app_mock_up_eng.svg",
+			image: "./scanner.png",
 			color: "from-orange-600 to-orange-800",
 		},
 		{
@@ -71,16 +71,16 @@ const steps = {
 			title: "Intelligente Navigation",
 			subtitle: "Schritt-für-Schritt-Führung",
 			description:
-				"Bieten Sie Gabelstaplerfahrern präzise Echtzeit-Navigation direkt auf den vorhandenen Scannern. Ein intuitive Oberfläche sorgen für optimale Wege und Klarheit auf dem Lager.",
+				"Bieten Sie Gabelstaplerfahrern optimierte Fahraufträge direkt auf den vorhandenen Scannern. Ein intuitive Benutzer-Oberfläche sorgt für optimale Wege und Klarheit auf dem Lager.",
 			icon: Forklift,
 			image: "./scanner.png",
 			color: "from-orange-600 to-orange-800",
 		},
 		{
-			title: "Echtzeit-Analytics",
+			title: "Echtzeit-Analyse",
 			subtitle: "Datenbasierte Einblicke",
 			description:
-				"Überblicken Sie die Lagerleistung mit einem umfassenden Analytics-Dashboard. Verfolgen Sie KPIs, identifizieren Sie Engpässe und treffen Sie fundierte Entscheidungen mit Echtzeit-Betriebsdaten.",
+				"Überblicken Sie die Lagerleistung mit einem umfassenden Dashboard. Verfolgen Sie KPIs, identifizieren Sie Engpässe und treffen Sie fundierte Entscheidungen mit Echtzeit-Betriebsdaten.",
 			icon: LayoutDashboard,
 			image: "./laptop.png",
 			color: "from-gray-600 to-gray-800",
