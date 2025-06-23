@@ -15,7 +15,7 @@ export const metadata = {
 		"Cross Docking Software", "Smart Warehouse", "AI Logistics"
 	  ],
 	openGraph: {
-		images: './logo_dark.png',
+		images: './open_graph.png',
 	},
 	icons: {
 		icon: './favicon.png',
