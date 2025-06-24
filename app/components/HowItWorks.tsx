@@ -205,10 +205,10 @@ const StepComponent = ({
 									<step.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
 								</motion.div>
 								<div className="min-w-0 flex-1">
-									<h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-1 leading-tight">
+									<h3 className="text-xl font-semibold text-white mb-1 leading-tight">
 										{step.title}
 									</h3>
-									<p className="text-xs sm:text-sm text-orange-400 font-medium">
+									<p className="text-s text-orange-400 font-medium">
 										{step.subtitle}
 									</p>
 								</div>
@@ -220,7 +220,7 @@ const StepComponent = ({
 						</div>
 
 						{/* Description */}
-						<p className="text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed mb-4 sm:mb-6">
+						<p className="text-gray-300 leading-relaxed mb-4 sm:mb-6">
 							{step.description}
 						</p>
 
