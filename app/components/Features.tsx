@@ -51,7 +51,7 @@ const features = {
 			icon: Users,
 			title: "Benutzerfreundliches Design",
 			description:
-				"Intuitive Benutzeroberfläche für Fahrer entwickelt, steigert Produktivität und Arbeitszufriedenheit",
+				"Intuitive Benutzeroberfläche für Fahrer steigert Produktivität und Arbeitszufriedenheit",
 			highlight: "Überzeugende User Experience",
 		},
 		{
