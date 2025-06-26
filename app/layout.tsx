@@ -3,6 +3,7 @@ import "@/app/_styles/globals.css";
 export const metadata = {
 	title: "transload - Staplerleitsystem für Umschlaglager",
 	description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
+	themeColor: "#0C3A5F",
 	keywords: [
 		// Deutsch
 		"Staplerleitsystem", "Umschlaglager", "Leerfahrten", "Kosten sparen", "Intralogistik", "Logistiksoftware",
@@ -15,6 +16,10 @@ export const metadata = {
 		"Cross Docking Software", "Smart Warehouse", "AI Logistics"
 	  ],
 	openGraph: {
+		type: "website",
+		url: "https://www.trans-load.de",
+		title: "transload - Staplerleitsystem für Umschlaglager",
+		description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
 		images: './open_graph.jpg',
 	},
 	icons: {
