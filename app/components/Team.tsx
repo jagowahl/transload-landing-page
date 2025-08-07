@@ -33,7 +33,7 @@ const content = {
 		joinUs: "Möchtest du Teil unseres Teams werden?",
 		motivation:
 			"Wir suchen immer nach talentierten und motivierten Leuten, die unser Team bereichern.",
-		joinTeam: "Unserem Team beitreten",
+		joinTeam: "Join Our Team",
 	},
 };
 
