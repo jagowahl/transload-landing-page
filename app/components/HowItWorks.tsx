@@ -45,7 +45,7 @@ const steps = {
 			description:
 				"Monitor warehouse performance with comprehensive analytics dashboard. Track KPIs, identify bottlenecks, and make informed decisions with real-time operational data.",
 			icon: LayoutDashboard,
-			image: "./laptop.png",
+			image: "./dashboard.svg",
 			color: "from-gray-600 to-gray-800",
 		},
 	],
@@ -82,7 +82,7 @@ const steps = {
 			description:
 				"Überblicken Sie die Lagerleistung mit einem umfassenden Dashboard. Verfolgen Sie KPIs, identifizieren Sie Engpässe und treffen Sie fundierte Entscheidungen mit Echtzeit-Betriebsdaten.",
 			icon: LayoutDashboard,
-			image: "./laptop.png",
+			image: "./dashboard.svg",
 			color: "from-gray-600 to-gray-800",
 		},
 	],
@@ -234,8 +234,8 @@ const StepComponent = ({
 										: { opacity: 0, scale: 0.8 }
 								}
 								transition={{ duration: 0.5, delay: index * 0.2 + 0.3 }}
-								className={`relative overflow-hidden rounded-xl bg-gray-700/50 ${
-									index === 2 ? "" : "p-4"
+								className={`relative overflow-hidden rounded-xl ${
+									index === 2 || index === 3 ? "" : "bg-gray-700/50 p-4"
 								}`}
 							>
 								<div className="relative">
@@ -249,7 +249,7 @@ const StepComponent = ({
 										} ${
 											index === 1
 												? "max-w-[250px] mx-auto rounded-lg w-full h-auto"
-												: index === 2
+												: index === 2 || index === 3
 												? "w-full h-full object-cover rounded-xl"
 												: "rounded-lg w-full h-auto"
 										}`}

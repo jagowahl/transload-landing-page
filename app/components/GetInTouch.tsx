@@ -7,7 +7,7 @@ const content = {
 		title: "Ready to Upgrade Your Transshipment Warehouse?",
 		description: "Get in touch with us.",
 		meeting: "Schedule a Meeting",
-		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
+		meetingUrl: "https://cal.com/jago-wahl/",
 		email: "Send us an Email",
 		emailUrl: "mailto:contact@trans-load.de",
 		linkedin: "Visit us on LinkedIn",
@@ -18,7 +18,7 @@ const content = {
 		title: "Bereit für ein Umschlaglager-Upgrade?",
 		description: "Nehmen Sie Kontakt mit uns auf.",
 		meeting: "Meeting vereinbaren",
-		meetingUrl: "https://meetings.hubspot.com/nils-boerner",
+		meetingUrl: "https://cal.com/jago-wahl/",
 		email: "Senden Sie uns eine E-Mail",
 		emailUrl: "mailto:contact@trans-load.de",
 		linkedin: "Besuchen Sie uns auf LinkedIn",
@@ -70,7 +70,12 @@ export default function GetInTouch({ language }: { language: "en" | "de" }) {
 				<div className="max-w-md mx-auto space-y-6">
 					<div className="flex flex-col gap-4">
 						{/* Schedule Meeting */}
-						<Link href={meetingUrl} className="group">
+						<Link
+							href={meetingUrl}
+							className="group"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<div className="flex items-center justify-center p-4 bg-orange-500 hover:bg-orange-600 rounded-lg transition-colors duration-200">
 								<Calendar className="w-5 h-5 mr-3 text-white" />
 								<span className="text-white font-medium">{meeting}</span>
@@ -78,7 +83,12 @@ export default function GetInTouch({ language }: { language: "en" | "de" }) {
 						</Link>
 
 						{/* Email */}
-						<Link href={emailUrl} className="group">
+						<Link
+							href={emailUrl}
+							className="group"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<div className="flex items-center justify-center p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors duration-200">
 								<Mail className="w-5 h-5 mr-3 text-white" />
 								<span className="text-white font-medium">{email}</span>
@@ -86,7 +96,12 @@ export default function GetInTouch({ language }: { language: "en" | "de" }) {
 						</Link>
 
 						{/* LinkedIn */}
-						<Link href={linkedinUrl} className="group">
+						<Link
+							href={linkedinUrl}
+							className="group"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
 							<div className="flex items-center justify-center p-4 bg-gray-700 hover:bg-gray-600 rounded-lg transition-colors duration-200">
 								<Linkedin className="w-5 h-5 mr-3 text-white" />
 								<span className="text-white font-medium">{linkedin}</span>
