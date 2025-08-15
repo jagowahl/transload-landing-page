@@ -4,12 +4,12 @@ import { ArrowDown, Zap } from "lucide-react";
 export default function Hero({ language }: { language: "en" | "de" }) {
 	const content = {
 		en: {
-			title: "Forklift Control System for Transshipment Warehouses",
+			title: "The Autopilot for Transshipment Warehouses",
 			subtitle: "Revolutionize Your Warehouse Operations",
 			description: "Fewer Empty Runs. Lower Costs. Higher Productivity.",
 		},
 		de: {
-			title: "Staplerleitsystem für Umschlaglager",
+			title: "Der Autopilot für Umschlaglager",
 			subtitle: "Revolutionieren Sie Ihre Lagerabläufe",
 			description:
 				"Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
