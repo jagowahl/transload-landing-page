@@ -4,7 +4,7 @@ import { ArrowDown, Zap } from "lucide-react";
 export default function Hero({ language }: { language: "en" | "de" }) {
 	const content = {
 		en: {
-			title: "The Autopilot for Transshipment Warehouses",
+			title: "The Autopilot for Cross Docking Warehouses",
 			subtitle: "Revolutionize Your Warehouse Operations",
 			description: "Fewer Empty Runs. Lower Costs. Higher Productivity.",
 		},

@@ -4,7 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 const benefits = {
 	en: [
-		"Reduce operational costs from the first month, as fewer drivers are needed in the transshipment warehouse",
+		"Reduce operational costs from the first month, as fewer drivers are needed in the cross docking warehouse",
 		"Increase warehouse efficiency and throughput",
 		"Minimize forklift idle time and unnecessary movement",
 	],
