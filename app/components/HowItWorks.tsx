@@ -32,7 +32,7 @@ const steps = {
 		},
 		{
 			title: "Intelligent Navigation",
-			subtitle: "Turn-by-Turn Guidance",
+			subtitle: "The transload Autopilot",
 			description:
 				"Provide forklift operators with optimized transport orders directly on existing scanners. An intuitive user interface ensures optimal paths and clarity across the warehouse.",
 			icon: Forklift,
@@ -41,7 +41,7 @@ const steps = {
 		},
 		{
 			title: "Real-Time Analytics",
-			subtitle: "Data-Driven Insights",
+			subtitle: "The transload Cockpit",
 			description:
 				"Monitor warehouse performance with comprehensive analytics dashboard. Track KPIs, identify bottlenecks, and make informed decisions with real-time operational data.",
 			icon: LayoutDashboard,
@@ -69,7 +69,7 @@ const steps = {
 		},
 		{
 			title: "Intelligente Navigation",
-			subtitle: "Schritt-für-Schritt-Führung",
+			subtitle: "Der transload Autopilot",
 			description:
 				"Bieten Sie Gabelstaplerfahrern optimierte Fahraufträge direkt auf den vorhandenen Scannern. Ein intuitive Benutzer-Oberfläche sorgt für optimale Wege und Klarheit auf dem Lager.",
 			icon: Forklift,
@@ -78,7 +78,7 @@ const steps = {
 		},
 		{
 			title: "Echtzeit-Analyse",
-			subtitle: "Datenbasierte Einblicke",
+			subtitle: "Das transload Cockpit",
 			description:
 				"Überblicken Sie die Lagerleistung mit einem umfassenden Dashboard. Verfolgen Sie KPIs, identifizieren Sie Engpässe und treffen Sie fundierte Entscheidungen mit Echtzeit-Betriebsdaten.",
 			icon: LayoutDashboard,

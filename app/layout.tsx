@@ -1,7 +1,7 @@
 import "@/app/_styles/globals.css";
 
 export const metadata = {
-	title: "transload - Staplerleitsystem für Umschlaglager",
+	title: "transload - Der Autopilot für Umschlaglager",
 	description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
 	themeColor: "#0C3A5F",
 	keywords: [
@@ -42,7 +42,7 @@ export const metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://www.trans-load.de",
-		title: "transload - Staplerleitsystem für Umschlaglager",
+		title: "transload - Der Autopilot für Umschlaglager",
 		description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
 		images: "./open_graph.jpg",
 	},
