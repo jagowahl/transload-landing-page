@@ -4,7 +4,7 @@ import { Mail, Calendar, Linkedin, Zap } from "lucide-react";
 
 const content = {
 	en: {
-		title: "Ready to Upgrade Your Transshipment Warehouse?",
+		title: "Ready to Upgrade Your Cross Docking Warehouse?",
 		description: "Get in touch with us.",
 		meeting: "Schedule a Meeting",
 		meetingUrl: "https://cal.com/jago-wahl/",

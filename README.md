@@ -1,6 +1,6 @@
 # Transload Landing Page
 
-A modern, responsive landing page for Transload - an intelligent forklift control system that optimizes forklift routes and streamlines transshipment warehouse operations through AI-powered optimization solutions.
+A modern, responsive landing page for Transload - an intelligent forklift control system that optimizes forklift routes and streamlines cross docking warehouse operations through AI-powered optimization solutions.
 
 ## 🚀 About the Project
 

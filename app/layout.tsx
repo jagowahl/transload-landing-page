@@ -25,6 +25,8 @@ export const metadata = {
 		// Englisch
 		"Intralogistics",
 		"Transshipment Warehouse",
+		"Cross Docking Warehouse",
+		"Cross Docking",
 		"Forklift",
 		"Pallet Truck",
 		"Route Optimization",
