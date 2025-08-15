@@ -6,26 +6,47 @@ export const metadata = {
 	themeColor: "#0C3A5F",
 	keywords: [
 		// Deutsch
-		"Staplerleitsystem", "Umschlaglager", "Leerfahrten", "Kosten sparen", "Intralogistik", "Logistiksoftware",
-		"Lagerverwaltungssystem", "Flurfördermittel", "Disposition Stapler", "Effizienzsteigerung Lager",
-		"Automatisierung Umschlaglager", "KI in der Intralogistik", "Logistik Digitalisierung", "Start-Up", "Startup",
-	  
+		"Staplerleitsystem",
+		"Umschlaglager",
+		"Leerfahrten",
+		"Kosten sparen",
+		"Intralogistik",
+		"Logistiksoftware",
+		"Lagerverwaltungssystem",
+		"Flurfördermittel",
+		"Disposition Stapler",
+		"Effizienzsteigerung Lager",
+		"Automatisierung Umschlaglager",
+		"KI in der Intralogistik",
+		"Logistik Digitalisierung",
+		"Start-Up",
+		"Startup",
+
 		// Englisch
-		"Intralogistics", "Transshipment Warehouse", "Forklift", "Pallet Truck", "Route Optimization", "Cost Savings",
-		"Forklift Guidance System", "Warehouse Control System", "Fleet Management", "Material Flow Optimization",
-		"Cross Docking Software", "Smart Warehouse", "AI Logistics"
-	  ],
+		"Intralogistics",
+		"Transshipment Warehouse",
+		"Forklift",
+		"Pallet Truck",
+		"Route Optimization",
+		"Cost Savings",
+		"Forklift Guidance System",
+		"Warehouse Control System",
+		"Fleet Management",
+		"Material Flow Optimization",
+		"Cross Docking Software",
+		"Smart Warehouse",
+		"AI Logistics",
+	],
 	openGraph: {
 		type: "website",
 		url: "https://www.trans-load.de",
 		title: "transload - Staplerleitsystem für Umschlaglager",
 		description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
-		images: './open_graph.jpg',
+		images: "./open_graph.jpg",
 	},
 	icons: {
-		icon: './favicon.png',
-	  },
-	
+		icon: "./favicon.png",
+	},
 };
 
 export default function RootLayout({
