@@ -14,7 +14,10 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 	const toggleLanguage = () => setLanguage(language === "en" ? "de" : "en");
 
 	const navigationItems = [
-		{ href: "#features", label: language === "en" ? "Key Features" : "Key-Features" },
+		{
+			href: "#features",
+			label: language === "en" ? "Key Features" : "Key-Features",
+		},
 		{
 			href: "#how-it-works",
 			label: language === "en" ? "How it Works" : "So funktioniert's",
@@ -27,7 +30,7 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 	return (
 		<header className="sticky top-0 bg-gray-800/70 backdrop-blur-sm border-b border-gray-700 z-50 shadow-lg">
 			<nav
-				className="container mx-auto px-4 py-4"
+				className="container mx-auto px-2 py-4"
 				role="navigation"
 				aria-label="Main navigation"
 			>
@@ -42,7 +45,7 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 							alt="Transload Logo"
 							width={180}
 							height={180}
-							className="h-8 w-auto"
+							className="h-12 w-auto"
 							priority
 						/>
 					</Link>
