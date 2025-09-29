@@ -1,8 +1,8 @@
 import "@/app/_styles/globals.css";
 
 export const metadata = {
-	title: "transload - Der Autopilot für Umschlaglager",
-	description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
+	title: "transload",
+	description: "Die nächste Generation der Intralogistik",
 	themeColor: "#0C3A5F",
 	keywords: [
 		// Deutsch
@@ -42,8 +42,8 @@ export const metadata = {
 	openGraph: {
 		type: "website",
 		url: "https://www.trans-load.de",
-		title: "transload - Der Autopilot für Umschlaglager",
-		description: "Weniger Leerfahrten. Geringere Kosten. Höhere Produktivität.",
+		title: "transload",
+		description: "Die nächste Generation der Intralogistik",
 		images: "./open_graph.jpg",
 	},
 	icons: {
