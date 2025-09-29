@@ -28,7 +28,7 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 	];
 
 	return (
-		<header className="sticky top-0 bg-gray-800/70 backdrop-blur-sm border-b border-gray-700 z-50 shadow-lg">
+		<header className="sticky top-0 backdrop-blur-sm border-b border-gray-700 z-50 shadow-lg">
 			<nav
 				className="container mx-auto px-2 py-4"
 				role="navigation"
@@ -50,19 +50,6 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 						/>
 					</Link>
 
-					{/* Desktop Navigation */}
-					<div className="hidden md:flex items-center space-x-8">
-						{navigationItems.map((item) => (
-							<Link
-								key={item.href}
-								href={item.href}
-								className="text-gray-300 hover:text-orange-500 transition-colors font-medium text-sm"
-							>
-								{item.label}
-							</Link>
-						))}
-					</div>
-
 					{/* Actions */}
 					<div className="flex items-center space-x-3">
 						{/* Language Toggle */}
@@ -73,46 +60,13 @@ export default function Header({ language, setLanguage }: HeaderProps) {
 							aria-label={`Switch to ${
 								language === "en" ? "German" : "English"
 							}`}
-							className="bg-orange-500 text-white hover:bg-orange-600 transition-colors px-3 py-2 text-xs font-medium"
+							className="bg-orange-500 hover:bg-orange-600 rounded-full transition-colors px-3 py-2 text-xs font-medium backdrop-blur-md border bg-orange-400/10 border-orange-500/20 hover:text-orange-500 hover:border-orange-500 text-orange-500 hover:bg-orange-400/20"
 						>
 							<Globe className="w-4 h-4 mr-1" />
 							{language === "en" ? "DE" : "EN"}
 						</Button>
-
-						{/* Mobile Menu Toggle */}
-						<Button
-							variant="ghost"
-							size="icon"
-							onClick={() => setIsMenuOpen(!isMenuOpen)}
-							aria-label="Toggle mobile menu"
-							className="md:hidden text-gray-300 hover:text-white"
-						>
-							{isMenuOpen ? (
-								<X className="w-5 h-5" />
-							) : (
-								<Menu className="w-5 h-5" />
-							)}
-						</Button>
 					</div>
 				</div>
-
-				{/* Mobile Navigation */}
-				{isMenuOpen && (
-					<div className="md:hidden mt-4 py-4 border-t border-gray-700 animate-in slide-in-from-top-2">
-						<div className="flex flex-col space-y-3">
-							{navigationItems.map((item) => (
-								<Link
-									key={item.href}
-									href={item.href}
-									onClick={() => setIsMenuOpen(false)}
-									className="text-gray-300 hover:text-orange-500 transition-colors font-medium py-2 px-2"
-								>
-									{item.label}
-								</Link>
-							))}
-						</div>
-					</div>
-				)}
 			</nav>
 		</header>
 	);
