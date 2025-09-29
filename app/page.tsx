@@ -2,16 +2,13 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import Features from "./components/Features";
-import HowItWorks from "./components/HowItWorks";
-import Benefits from "./components/Benefits";
 import Team from "./components/Team";
 import GetInTouch from "./components/GetInTouch";
 import Partners from "./components/Partners";
 import Footer from "./components/Footer";
 
 export default function Home() {
-	const [language, setLanguage] = useState("de");
+	const [language, setLanguage] = useState<"de" | "en">("de");
 
 	useEffect(() => {
 		document.documentElement.classList.add("dark");
@@ -22,11 +19,9 @@ export default function Home() {
 			<Header language={language} setLanguage={setLanguage} />
 			<main>
 				<Hero language={language} />
-				<Features language={language} />
-				<HowItWorks language={language} />
-				<GetInTouch language={language} />
+				<Partners />
 				<Team language={language} />
-				<Partners language={language} />
+				<GetInTouch />
 				<Footer language={language} />
 			</main>
 		</div>
