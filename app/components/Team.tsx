@@ -42,11 +42,6 @@ export default function Team({ language }: { language: "en" | "de" }) {
 
 	return (
 		<section id="team" className="py-20 bg-gray-900 relative overflow-hidden">
-			{/* Background decoration */}
-			<div className="absolute inset-0">
-				<div className="absolute top-10 right-20 w-24 h-24 bg-orange-500/5 rounded-full blur-xl"></div>
-				<div className="absolute bottom-32 left-16 w-32 h-32 bg-orange-500/5 rounded-full blur-xl"></div>
-			</div>
 
 			<div className="container mx-auto px-4 relative z-10">
 				{/* Section Header */}

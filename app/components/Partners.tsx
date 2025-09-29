@@ -8,12 +8,6 @@ export default function Partners({ language }: { language: "en" | "de" }) {
 			id="partners"
 			className="py-20 bg-gray-800 relative overflow-hidden"
 		>
-			{/* Background decoration */}
-			<div className="absolute inset-0">
-				<div className="absolute top-16 left-20 w-28 h-28 bg-orange-500/5 rounded-full blur-xl"></div>
-				<div className="absolute bottom-20 right-16 w-36 h-36 bg-orange-500/5 rounded-full blur-xl"></div>
-			</div>
-
 			<div className="container mx-auto px-4 relative z-10">
 				{/* Section Header */}
 				<div className="text-center mb-16">
