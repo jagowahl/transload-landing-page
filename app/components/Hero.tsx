@@ -13,8 +13,7 @@ export default function Hero({ language }: { language: "en" | "de" }) {
 		},
 	};
 
-	const { title, description } =
-		content[language as keyof typeof content];
+	const { title, description } = content[language as keyof typeof content];
 
 	return (
 		<section className="relative py-20 lg:py-32 overflow-hidden">
@@ -43,18 +42,16 @@ export default function Hero({ language }: { language: "en" | "de" }) {
 						</p>
 						<Button
 							size="lg"
-							className="inline-flex items-center space-x-2 px-8 py-4 text-lg font-bold rounded-full shadow-lg text-white transition-all duration-300 hover:scale-105 hover:shadow-2xl focus:outline-none
-								bg-orange-500/30 backdrop-blur-md border border-orange-400/40"
-							style={{
-								background:
-									"linear-gradient(90deg, rgba(255,140,0,0.25) 0%, rgba(255,87,34,0.25) 100%)",
-								boxShadow:
-									"0 4px 32px 0 rgba(255,140,0,0.15), 0 1.5px 4px 0 rgba(255,87,34,0.10)",
+							onClick={() => {
+								const meetingSection = document.getElementById("meeting");
+								if (meetingSection) {
+									meetingSection.scrollIntoView({ behavior: "smooth" });
+								}
 							}}
+							className="inline-flex items-center space-x-2 px-8 py-4 text-lg font-bold rounded-full shadow-lg transition-all duration-300 hover:shadow-2xl focus:outline-none
+							 backdrop-blur-md border bg-orange-400/10 border-orange-500/20 text-orange-500 hover:bg-orange-400/20 hover:border-orange-500"
 						>
-							<span className="drop-shadow-md">
-								{language === "en" ? "Talk to Us" : "Sprechen Sie mit uns"}
-							</span>
+							<span className="drop-shadow-md">Let's talk</span>
 							<ArrowDown className="w-6 h-6 animate-bounce" />
 						</Button>
 					</div>
